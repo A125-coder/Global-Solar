@@ -1,0 +1,173 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+a {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Заголовки
+h1 {
+  @include font(42px, $font-montserrat-bold, 900);
+}
+
+h2 {
+  @include font(24px, $font-montserrat-medium, 500);
+}
+
+h3 {
+  @include font(17px, $font-montserrat-reg, 400);
+}
+
+// Параграфи
+.white-background {
+  @include font(12px, $font-opensans-reg, $font-main--color-primary_4, 400);
+  line-height: 28px;
+}
+
+.another-background {
+  @include font(13px, $font-opensans-reg, $font-main--color-primary_3, 400);
+  line-height: 28px;
+  text-align: center;
+}
+
+header p {
+  @include font(12px, $font-montserrat-reg, $font-main--color-primary_1, 400);
+  text-decoration: none;
+
+}
+
+main p {
+  @include font(12px, $font-montserrat-reg, $font-header-p--color-primary, 400);
+  text-decoration: none;
+
+}
+
+// Лінки
+.menu {
+  a {
+    @include font(14px, $font-opensans-reg, $font-header-footer-a--color-primary, 400);
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    @include font(18px, $font-montserrat-bold, $font-text-footer--color-primary--hover, 900);
+    padding: 9px 20px 8px 20px;
+    text-decoration: none;
+
+  }
+}
+
+.link-footer {
+  a {
+    @include font(14px, $bg-footer--color-primary, $font-montserrat-reg, 400);
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    @include font(18px, $bg-footer--color-primary, $font-montserrat-semibold, 600);
+    padding: 9px 20px 8px 20px;
+    text-decoration: none;
+
+  }
+}
+
+// Списки
+.square {
+  margin: 0;
+  counter-reset: li;
+  list-style: none;
+  background: #d4d2d2;
+  padding: 10px;
+
+  li {
+    position: relative;
+    margin: 0 0 10px 2em;
+    padding: 4px 8px;
+    border-top: 2px solid #acf18a;
+    transition: .2s linear;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    width: 2em;
+    box-sizing: border-box;
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #787A77;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background: #c4c5c3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: .2s linear;
+  }
+
+  li:hover {
+    border-top: 2px solid #389F70;
+  }
+
+  li:hover:before {
+    border: 2px solid #389F70;
+    background: #98EABA;
+  }
+}
+
+// Інпути
+input {
+  background-color: $standart--color__1;
+  border: $standart--color__2 solid 1px;
+  width: 100%;
+  @include font(15px, $font-montserrat-reg, $font-main--color-primary_3, 400);
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+input:active {
+  background-color: $standart--color__1;
+  border: $btn--color-primary_1 solid 1px;
+  width: 100%;
+  @include font(15px, $font-montserrat-reg, $font-main--color-primary_3, 400);
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+input:hover {
+  background-color: $standart--color__3;
+  border: $btn--color-primary_2--hover solid 1px;
+  width: 100%;
+  @include font(15px, $font-montserrat-reg, $font-main--color-primary_3, 400);
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px;
+}
