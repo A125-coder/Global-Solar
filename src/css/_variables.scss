@@ -2,7 +2,7 @@
 $bg-header--color-primary_1: #212121;
 $bg-main--color-primary_1: #fcfcfc; //color of the first block
 $bg-main--color-primary_2: #ffffff; //body color
-$bg-main--color-primary_2: #fafafa; //body color in second block
+$bg-main--color-primary_3: #fafafa; //body color in second block
 $bg-footer--color-primary: #0e131a;
 
 // Text colors
@@ -36,3 +36,6 @@ $default--color__1: #ffddc6; // border of discount
 $default--color__2: #4b434f;
 $default--color__3: #ffffff;
 $default--color__4: #29384d;
+
+
+$gradient_1: linear-gradient(90deg, rgba(245,89,75,1) 5%, rgba(255,159,92,1) 95%);
