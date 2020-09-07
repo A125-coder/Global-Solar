@@ -56,3 +56,13 @@
     4px 8px 10px 0px rgba(251, 131, 85, 0.4)
   );
 }
+.tarifs:hover {
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
+}
