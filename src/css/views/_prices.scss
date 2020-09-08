@@ -1,0 +1,170 @@
+
+.prices{
+    .bg_profit_main{
+        padding-top: 50px;
+        background-color: $bg-main--color-primary_3;
+        .profit_main{
+            height: 370px;
+            background-color: $bg-main--color-primary_1;
+            border-radius: 3px;
+            box-shadow: 0 20px 7px -1px rgba(241, 241, 241, 1);
+        h2{
+            padding-top: 30px;
+            text-align: center;
+        }
+        hr{
+            width: 75px;
+            height: 1.5px;
+            border: none;
+            margin: 30px auto;
+            background-color: $btn--color-primary_1;
+        }
+        p{
+            text-align: center;
+        }
+        .main_prof{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            img{
+                float: left;
+            }
+            div{
+                width: 30%;
+            }
+            h3{
+                line-height: 70px;
+            }
+        }
+    }}
+    .info_main{
+        padding: 70px 0 40px 0;
+        img{
+            width: 100%;
+        }
+        .info_main_h3{
+            margin-bottom: 40px;
+        }
+        .info_main_p{
+            span{
+                font-weight: 600;
+            }
+        }
+        .info_main_h4{
+            margin: 30px 0;
+        }
+        .info_main_ul{
+            margin-left: 20px;
+            li{
+                margin-bottom: 15px;
+                padding-left: 10px;
+                list-style-image: url(../../img/img/li.png);
+            }
+        }
+        .info_center{
+            .info_center_h3{
+                margin: 30px 0 20px 0;
+            }
+            h5{
+                margin-bottom: 20px;
+            }
+        }
+        .montag{
+            img{
+                width: 100%;
+            }
+            h5{
+                margin: 10px 0 15px 0;
+            }
+            ul{
+                margin-left: 20px;
+                li{
+                    margin-bottom: 15px;
+                    padding-left: 10px;
+                    list-style-image: url(../../img/img/li.png);
+                }
+            }
+        }
+    }
+    .bg_form{
+        background-image: url(../../img/img/bg_form.jpg);
+        height: 390px;
+        .form{
+            padding-top: 40px;
+            .form_h2{
+                margin-top: 40px;
+                color: $default--color__3;
+            }
+            p{
+                color: $default--color__3;
+            }
+            hr{
+                width: 75px;
+                height: 1.5px;
+                border: none;
+                margin: 30px 10px;
+                background-color: $btn--color-primary_1;
+            }
+            .form_{
+                height: 400px;
+                background-color: $default--color__3;
+                border-radius: 3px;
+                box-shadow: 2.5px 5px 5px 5px rgba(241, 241, 241, 0.4);
+                h3{
+                    margin-top: 30px;
+                    text-align: center;
+                }
+                .form_hr{
+                    margin: 20px auto 30px auto;
+                }
+                .input{
+                    width: 250px;
+                    height: 40px;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    border-width: 0 0 1px 0;
+                    outline: 0 !important;
+                  }
+                input::placeholder{
+                    padding-left: 20px;
+                }
+                  button{
+                    display: block;
+                    margin: 30px auto;
+                }
+                  
+                  
+            }
+        }
+    }
+
+.bg-guarantee{
+    background-color: $bg-main--color-primary_2;
+    .gurantee{
+        h2{
+            margin-top: 60px;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .gurantee_info{
+            margin-bottom: 90px;
+            h6{
+                margin-bottom: 15px;
+            }
+            ul{
+                margin-left: 20px;
+                li{
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    list-style-image: url(../../img/img/li.png);
+                }
+            }
+        }
+    }
+}
+}

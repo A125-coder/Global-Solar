@@ -60,6 +60,10 @@ main p {
   text-decoration: none;
 
 }
+.price_p, .prices li{
+  @include font(14px, $font-montserrat-reg, $font-main--color-primary_2, 400);
+  text-decoration: none;
+}
 
 // Лінки
 .menu {
@@ -144,7 +148,7 @@ main p {
 }
 
 // Інпути
-input {
+.input_ {
   background-color: $default--color__3;
   border: $default--color__2 solid 1px;
   width: 100%;
@@ -154,7 +158,7 @@ input {
   border-radius: 30px;
 }
 
-input:active {
+.input_:active {
   background-color: $default--color__3;
   border: $btn--color-primary_1 solid 1px;
   width: 100%;
@@ -164,7 +168,7 @@ input:active {
   border-radius: 30px;
 }
 
-input:hover {
+.input_:hover {
   background-color: $default--color__3;
   border: $btn--color-primary_2--hover solid 1px;
   width: 100%;
