@@ -68,7 +68,7 @@ main p {
 .menu {
   a {
     @include font(
-      14px,
+      17px,
       $font-opensans-reg,
       $font-header-footer-a--color-primary,
       400
@@ -78,12 +78,12 @@ main p {
 
   a:hover {
     @include font(
-      18px,
+      17px,
       $font-montserrat-bold,
       $font-text-footer--color-primary--hover,
       900
     );
-    padding: 9px 20px 8px 20px;
+    // padding: 9px 20px 8px 20px;
     text-decoration: none;
   }
 }
