@@ -1,12 +1,18 @@
-@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.css';
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 
-@import 'variables';
-@import 'settings';
-@import 'fonts';
+@import "variables";
+@import "settings";
+@import "fonts";
 
-@import 'mixins';
-@import 'buttons';
+@import "mixins";
+@import "buttons";
 
+@import "views/top-header";
+@import "views/header";
+@import "views/footer";
+
+@import "views/prices";
+@import "views/contacts";
 
 
 @import 'views/top-header';
@@ -20,3 +26,6 @@
 
 @import 'views/main_home';
 @import 'views/about';
+
+@import "views/about_us";
+

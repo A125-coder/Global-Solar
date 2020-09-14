@@ -26,15 +26,15 @@ a {
 
 // Заголовки
 h1 {
-  @include font(42px, $font-montserrat-bold,none, 900);
+  @include font(42px, $font-montserrat-bold, none, 900);
 }
 
 h2 {
-  @include font(24px, $font-montserrat-medium,none, 500);
+  @include font(24px, $font-montserrat-medium, none, 500);
 }
 
 h3 {
-  @include font(17px, $font-montserrat-reg,none, 400);
+  @include font(17px, $font-montserrat-reg, none, 400);
 }
 
 // Параграфи
@@ -52,14 +52,13 @@ h3 {
 header p {
   @include font(12px, $font-montserrat-reg, $font-main--color-primary_1, 400);
   text-decoration: none;
-
 }
 
 main p {
   @include font(12px, $font-montserrat-reg, $font-header-p--color-primary, 400);
   text-decoration: none;
-
 }
+
 .price_p, .prices li,.three_body li{
   @include font(14px, $font-montserrat-reg, $font-main--color-primary_2, 400);
   text-decoration: none;
@@ -68,16 +67,24 @@ main p {
 // Лінки
 .menu {
   a {
-    @include font(14px, $font-opensans-reg, $font-header-footer-a--color-primary, 400);
+    @include font(
+      14px,
+      $font-opensans-reg,
+      $font-header-footer-a--color-primary,
+      400
+    );
     text-decoration: none;
-
   }
 
   a:hover {
-    @include font(18px, $font-montserrat-bold, $font-text-footer--color-primary--hover, 900);
+    @include font(
+      18px,
+      $font-montserrat-bold,
+      $font-text-footer--color-primary--hover,
+      900
+    );
     padding: 9px 20px 8px 20px;
     text-decoration: none;
-
   }
 }
 
@@ -85,14 +92,17 @@ main p {
   a {
     @include font(14px, $bg-footer--color-primary, $font-montserrat-reg, 400);
     text-decoration: none;
-
   }
 
   a:hover {
-    @include font(18px, $bg-footer--color-primary, $font-montserrat-semibold, 600);
+    @include font(
+      18px,
+      $bg-footer--color-primary,
+      $font-montserrat-semibold,
+      600
+    );
     padding: 9px 20px 8px 20px;
     text-decoration: none;
-
   }
 }
 
@@ -109,7 +119,7 @@ main p {
     margin: 0 0 10px 2em;
     padding: 4px 8px;
     border-top: 2px solid #acf18a;
-    transition: .2s linear;
+    transition: 0.2s linear;
   }
 
   li:last-child {
@@ -126,7 +136,7 @@ main p {
     box-sizing: border-box;
     margin-right: 8px;
     padding: 4px;
-    border-top: 2px solid #787A77;
+    border-top: 2px solid #787a77;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
@@ -134,16 +144,16 @@ main p {
     color: white;
     font-weight: bold;
     text-align: center;
-    transition: .2s linear;
+    transition: 0.2s linear;
   }
 
   li:hover {
-    border-top: 2px solid #389F70;
+    border-top: 2px solid #389f70;
   }
 
   li:hover:before {
-    border: 2px solid #389F70;
-    background: #98EABA;
+    border: 2px solid #389f70;
+    background: #98eaba;
   }
 }
 
