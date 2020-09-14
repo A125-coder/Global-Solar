@@ -1,0 +1,149 @@
+.three_body{
+    .bg-energy{
+        .energy{
+            .energy_top{
+                h1{
+                    margin-top: 60px;
+                    text-align: center;
+                }
+                hr{
+                    height: 1.5px;
+                    width: 70px;
+                    background-color: $btn--color-primary_1;
+                    border: none;
+                    margin: 20px auto;
+                }
+                p{
+                    line-height: 25px;
+                    text-align: center;
+                }
+                .col-5{
+                    h6{
+                        margin-top: 40px;
+                    }
+                    ul{
+                        margin-left: 15px;
+                        li{
+                            list-style-type: none;
+                            list-style-image: url(../../img/img/li.png);
+                            padding-left: 15px;
+                        }
+                    }
+                }
+                .price_middle{
+                    height: 100px;
+                    border: 7px solid $default--color__1;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    .price_middle_discount{
+                        img{
+                            position: relative;
+                            top:7.5px;
+                            left: -40px;
+                            z-index: 1;
+                            background-color: $bg-main--color-primary_3;
+                            height: 70px;
+                        }
+                        h4{
+                            line-height: 80px;
+                            text-align: center;
+                        }
+                    }
+                    .price_middle_text{
+                        margin-top: 15px;
+                        border: 2px solid $btn--color-primary_1;
+                        border-width: 0 0 0 2px;
+                        height: 60px;
+                        p{
+                            text-align: center;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+.bg-energy_bottom{
+    background-color: $bg-main--color-primary_3;
+    .energy_bottom{
+        text-align: center;
+        padding: 80px 0 100px 0;
+        h2{
+            margin-bottom: 50px;
+        }
+        p{
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    }
+}
+    .bg_form{
+        background-image: url(../../img/img/bg_form.jpg);
+        height: 390px;
+        .form{
+            padding-top: 40px;
+            .form_h2{
+                margin-top: 40px;
+                color: $font-main--color-primary_3;
+            }
+            p{
+                color: $font-main--color-primary_3;
+            }
+            hr{
+                width: 75px;
+                height: 1.5px;
+                border: none;
+                margin: 30px 0;
+                background-color: $btn--color-primary_1;
+            }
+            .form_{
+                height: 400px;
+                background-color: $font-main--color-primary_3;
+                border-radius: 3px;
+                box-shadow: 2.5px 5px 5px 5px rgba(241, 241, 241, 0.4);
+                h3{
+                    margin-top: 30px;
+                    text-align: center;
+                }
+                .form_hr{
+                    margin: 20px auto 30px auto;
+                }
+                .input{
+                    width: 250px;
+                    height: 40px;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    border-width: 0 0 1px 0;
+                    outline: 0 !important;
+                  }
+                input::placeholder{
+                    padding-left: 20px;
+                }
+                  button{
+                    display: block;
+                    margin: 30px auto;
+                }
+                  
+                  
+            }
+        }
+    }
+    .bg-three_text{
+        background-color: $bg-main--color-primary_2;
+        .three_text{
+            padding: 50px 0 180px 0;
+            h2{
+                margin-bottom: 20px;
+                
+            }
+            p{
+                line-height: 25px;
+            }
+            span{
+                    font-weight: 600;
+                }
+        }
+    }
+}
