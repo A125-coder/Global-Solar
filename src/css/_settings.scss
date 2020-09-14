@@ -58,8 +58,8 @@ main p {
   @include font(12px, $font-montserrat-reg, $font-header-p--color-primary, 400);
   text-decoration: none;
 }
-.price_p,
-.prices li {
+
+.price_p, .prices li,.three_body li{
   @include font(14px, $font-montserrat-reg, $font-main--color-primary_2, 400);
   text-decoration: none;
 }
