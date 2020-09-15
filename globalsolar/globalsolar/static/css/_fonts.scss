@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-Regular.woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat/woff/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat/woff/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../fonts/OpenSans/eot/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans-Semibold.eot")
+      format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans-Semibold.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans-Semibold.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans-Semibold.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans/eot/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans-Bold.eot")
+      format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans-Bold.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/eot/OpenSans.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans.eot") format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-montserrat-reg: "Montserrat";
+$font-montserrat-semibold: "Montserrat-SemiBold";
+$font-montserrat-bold: "Montserrat-Bold";
+$font-montserrat-medium: "Montserrat-Medium";
+$font-opensans-reg: "Open Sans";
+$font-opensans-bold: "Open Sans Bold";
+$font-opensans-semibold: "Open Sans Semibold";

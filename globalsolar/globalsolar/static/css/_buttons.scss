@@ -1,0 +1,97 @@
+.btn-outline-danger {
+  @include button(
+    10px,
+    $font-montserrat-reg,
+    $btn--color-primary_1,
+    transparent,
+    400,
+    none
+  );
+  border-color: $btn--color-primary_1;
+  border-radius: 30px;
+  width: 123px;
+  height: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.btn-outline-danger:hover {
+  @include button(
+    10px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    $btn--color-primary_1,
+    400,
+    2px 1px 2px 0px rgba(251, 131, 85, 0.4)
+  );
+  border-color: $btn--color-primary_1;
+}
+
+.btn-danger {
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    ),
+    400,
+    none
+  );
+  border-color: $btn--color-primary_1;
+  border-radius: 30px;
+  width: 198px;
+  height: 50px;
+}
+.btn-danger:hover {
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_2--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
+}
+.tarifs:hover {
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
+}
+.sign {
+  @include button(
+    14px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    ),
+    400,
+    none
+  );
+  border-color: $btn--color-primary_1;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+.sign:hover {
+  @include button(
+    14px,
+    $font-montserrat-reg,
+    $btn--color-primary_2--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
+}

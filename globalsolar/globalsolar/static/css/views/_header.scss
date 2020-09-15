@@ -1,0 +1,49 @@
+body {
+  position: relative;
+}
+.banner {
+  background-image: url(../img/mainfoto.png);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  margin: 0;
+  padding: 0;
+}
+.more {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .name {
+    @include font(48px, $font-montserrat-reg, $font-h1--color-primary, bold);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+    line-height: 1.25;
+  }
+  hr {
+    background: linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    );
+    width: 70px;
+    height: 1px;
+  }
+  p {
+    @include font(
+      14px,
+      $font-montserrat-reg,
+      $font-header-p--color-primary,
+      400
+    );
+    line-height: 1.857;
+  }
+}
+.decor {
+  position: absolute;
+  top: 290px;
+  right: 134px;
+  z-index: -1;
+}
