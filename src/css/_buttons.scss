@@ -66,3 +66,32 @@
     4px 8px 10px 0px rgba(251, 131, 85, 0.4)
   );
 }
+.sign {
+  @include button(
+    14px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    ),
+    400,
+    none
+  );
+  border-color: $btn--color-primary_1;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+.sign:hover {
+  @include button(
+    14px,
+    $font-montserrat-reg,
+    $btn--color-primary_2--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
+}
