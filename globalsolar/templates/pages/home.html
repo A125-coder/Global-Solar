@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+{% include 'partials/_header.html' %}
 <main class="main">
     <div class="container-fluid bg_profit_main">
         <!-- <img class="bg_profit_main_decor" src="../img/decor.png"> -->
@@ -13,8 +14,8 @@
         <div class="col-10 offset-1 menu">
             <div class="row main_prof">
                 <div><a href="#"><img src="{% static 'img/img/profit1.png' %}" alt=""><h3>СЕС для бізнесу</h3></a></div>
-                <div><a href="../green_tarif.html"><img src="{% static 'img/img/profit2.png' %}" alt=""><h3>Зелений тариф</h3></a></div>
-                <div><a href="../energy.html"><img src="{% static 'img/img/profit3.png' %}" alt=""><h3>Енергонезалежність</h3></a></div>
+                <div><a href="/green_tarif/"><img src="{% static 'img/img/profit2.png' %}" alt=""><h3>Зелений тариф</h3></a></div>
+                <div><a href="/energy/"><img src="{% static 'img/img/profit3.png' %}" alt=""><h3>Енергонезалежність</h3></a></div>
             </div>
         </div>
     </div>
@@ -47,7 +48,7 @@
                         всіх конструктивних тонкощах висотних та покрівельних робіт, з реальним портфоліо понад 400
                         об’єктів. Відповідно ми надаємо повну гарантію терміном 2 роки на всі будівельно-монтажні
                         роботи.</p>
-                    <form action="../pages/about_us.html">
+                    <form action="/about_us/">
                         <button class="btn-danger">Читати більше</button>
                     </form>
                 </div>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="../prices.html">
+                <form action="/prices/">
                     <button class="btn-danger tarifs">Тарифи</button>
                 </form>
             </div>

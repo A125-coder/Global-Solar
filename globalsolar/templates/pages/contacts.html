@@ -1,43 +1,48 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
 <div class="container-fluid bg-contact">
-    <div class="container contact">
-        <div class="col-12">
-            <h1>Як нас знайти?</h1>
-            <hr>
-            <p class="white-background">Завітайте в наш затишний , привітний офіс. Наші професіонали нададуть вам вичерпну консультація та інформацію, а також нададуть вигідні пропозиції і розрахунки, які оптимально підійдуть для вашого житла і особисто вам та вашій сім’ї.</p>
-            <div class=" offset-1 bg-mapContact">
-                <div class="row">
-                    <div class="col-7  mapContact"></div>
-                    <div class="col-4 offset-1">
-                        <h2>Наші контакти
-                        </h2>
-                        <ul>
-                            <li class="contact_number">
-                                <ul>
-                                    <li class="contact_num_none">+38 044 227 79 31</li>
-                                    <li class="contact_num_none">+38 067 618 85 19</li>
-                                    <li class="contact_num_none">+38 067 618 85 19</li>
-                                </ul>
-                            </li>
-                            <li class="contact_email">
-                                hello@solar.com
-                            </li>
-                            <li class="contact_street">
-                                м. Київ, вул. Сонячна, 41
-                            </li>
-                        </ul>
-                        <div class="row contact_">
-                            <div class="contact_F">
-                                <img src="../img/img/facebook-social-symbol-copy.png" alt="">
-                                <p>Facebook.com</p>
-                            </div>
-                            <div class="contact_T">
-                                <img src="../img/img/telegram-copy.png" alt="">
-                                <p>Telegram</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="container contact">
+    <div class="col-12">
+      <h1>Як нас знайти?</h1>
+      <hr />
+      <p class="white-background">
+        Завітайте в наш затишний , привітний офіс. Наші професіонали нададуть
+        вам вичерпну консультація та інформацію, а також нададуть вигідні
+        пропозиції і розрахунки, які оптимально підійдуть для вашого житла і
+        особисто вам та вашій сім’ї.
+      </p>
+      <div class="offset-1 bg-mapContact">
+        <div class="row">
+          <div class="col-7 mapContact"></div>
+          <div class="col-4 offset-1">
+            <h2>Наші контакти</h2>
+            <ul>
+              <li class="contact_number">
+                <ul>
+                  <li class="contact_num_none">+38 044 227 79 31</li>
+                  <li class="contact_num_none">+38 067 618 85 19</li>
+                  <li class="contact_num_none">+38 067 618 85 19</li>
+                </ul>
+              </li>
+              <li class="contact_email">hello@solar.com</li>
+              <li class="contact_street">м. Київ, вул. Сонячна, 41</li>
+            </ul>
+            <div class="row contact_">
+              <div class="contact_F">
+                <img
+                  src="{{STATIC_PREFIX}}img/img/facebook-social-symbol-copy.png"
+                  alt=""
+                />
+                <p>Facebook.com</p>
+              </div>
+              <div class="contact_T">
+                <img src="{{STATIC_PREFIX}}img/img/telegram-copy.png" alt="" />
+                <p>Telegram</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
+{% endblock %}

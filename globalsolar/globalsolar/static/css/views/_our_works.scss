@@ -40,7 +40,7 @@
       position: absolute;
       bottom: -1px;
       left: 16px;
-      background: url(../../img/our_works/Rectangle.svg) no-repeat 0%;
+      background: url(../img/our_works/Rectangle.svg) no-repeat 0%;
       width: 135px;
       height: 100px;
       padding: 15px;
@@ -61,7 +61,7 @@
       );
     }
     li {
-      list-style-image: url(../../img/img/li.png);
+      list-style-image: url(../img/img/li.png);
       line-height: 3.314;
       @include font(
         16px,

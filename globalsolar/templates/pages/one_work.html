@@ -1,9 +1,10 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
 <main>
   <div class="container-fluid one">
     <div class="container">
       <div class="img col-12">
         <h1>СЕС 30 кВт під Зелений тариф, Копилля – Маневичі, Луцьк, 2019</h1>
-        <img src="../img/our_works/SES_Manevychy_30kwp.jpg" />
+        <img src="{{STATIC_PREFIX}}img/our_works/SES_Manevychy_30kwp.jpg" />
       </div>
       <div class="row">
         <div class="col-xl-5 col-md-5 offset-md-1 my-md-4">
@@ -27,3 +28,4 @@
     </div>
   </div>
 </main>
+{% endblock %}

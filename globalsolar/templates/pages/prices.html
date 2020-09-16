@@ -1,3 +1,4 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
 <div class="prices">
   <div class="container-fluid bg_profit_main">
     <div class="container">
@@ -20,19 +21,19 @@
           <div class="row main_prof menu">
             <div>
               <a href="#"
-                ><img src="../img/img/profit1.png" alt="" />
+                ><img src="{{STATIC_PREFIX}}img/img/profit1.png" alt="" />
                 <h3>СЕС для бізнесу</h3></a
               >
             </div>
             <div>
-              <a href="../green_tarif.html"
-                ><img src="../img/img/profit2.png" alt="" />
+              <a href="/green_tarif/"
+                ><img src="{{STATIC_PREFIX}}img/img/profit2.png" alt="" />
                 <h3>Зелений тариф</h3></a
               >
             </div>
             <div>
-              <a href="../energy.html"
-                ><img src="../img/img/profit3.png" alt="" />
+              <a href="/energy/"
+                ><img src="{{STATIC_PREFIX}}img/img/profit3.png" alt="" />
                 <h3>Енергонезалежність</h3></a
               >
             </div>
@@ -64,7 +65,7 @@
             </ul>
           </div>
           <div class="col-5">
-            <img src="../img/img/price_1.jpg" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/price_1.jpg" alt="" />
           </div>
         </div>
         <div class="col-12 p-0 info_center">
@@ -96,7 +97,7 @@
         </div>
         <div class="row montag">
           <div class="col-5">
-            <img src="../img/img/Rectangle-1-copy-2.jpg" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/Rectangle-1-copy-2.jpg" alt="" />
           </div>
           <div class="col-7">
             <h5>Монтажні та пуско-налагоджувальні роботи включають також:</h5>
@@ -185,9 +186,10 @@
           </ul>
         </div>
         <div class="col-5 offset-1">
-          <img src="../img/img/Rectangle-1-copy-3.jpg" alt="" />
+          <img src="{{STATIC_PREFIX}}img/img/Rectangle-1-copy-3.jpg" alt="" />
         </div>
       </div>
     </div>
   </div>
 </div>
+{% endblock %}

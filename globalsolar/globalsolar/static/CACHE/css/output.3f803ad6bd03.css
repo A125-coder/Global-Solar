@@ -1,0 +1,1578 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff?f33760be5076");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Regular.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-SemiBold.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-SemiBold.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-SemiBold.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Bold.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Bold.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Bold.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Medium.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Medium.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Medium.ttf?f33760be5076") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Semibold.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Semibold.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans-Semibold.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans-Semibold.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans-Semibold.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Semibold.ttf?f33760be5076") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Bold.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Bold.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans-Bold.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans-Bold.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans-Bold.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Bold.ttf?f33760be5076") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/static/fonts/OpenSans/eot/OpenSans.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Regular.ttf?f33760be5076") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 1, globalsolar/static/css/_buttons.scss */
+.btn-outline-danger {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #f5584b;
+  background: transparent;
+  font-weight: 400;
+  box-shadow: none;
+  border-color: #f5584b;
+  border-radius: 30px;
+  width: 123px;
+  height: 30px;
+  margin-top: 30px;
+  text-transform: uppercase; }
+
+/* line 18, globalsolar/static/css/_buttons.scss */
+.btn-outline-danger:hover {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background: #f5584b;
+  font-weight: 400;
+  box-shadow: 2px 1px 2px 0px rgba(251, 131, 85, 0.4);
+  border-color: #f5584b; }
+
+/* line 30, globalsolar/static/css/_buttons.scss */
+.btn-danger {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+  font-weight: 400;
+  box-shadow: none;
+  border-color: #f5584b;
+  border-radius: 30px;
+  width: 198px;
+  height: 50px; }
+
+/* line 49, globalsolar/static/css/_buttons.scss */
+.btn-danger:hover {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #212121;
+  background: transparent;
+  font-weight: 400;
+  box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4); }
+
+/* line 59, globalsolar/static/css/_buttons.scss */
+.tarifs:hover {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background: transparent;
+  font-weight: 400;
+  box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4); }
+
+/* line 69, globalsolar/static/css/_buttons.scss */
+.sign {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+  font-weight: 400;
+  box-shadow: none;
+  border-color: #f5584b;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px; }
+
+/* line 88, globalsolar/static/css/_buttons.scss */
+.sign:hover {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #212121;
+  background: transparent;
+  font-weight: 400;
+  box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff?f33760be5076");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Regular.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Regular.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-SemiBold.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-SemiBold.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-SemiBold.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Bold.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Bold.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Bold.ttf?f33760be5076") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/static/fonts/Montserrat/woff/Montserrat-Medium.woff2?f33760be5076") format("woff2"), url("/static/fonts/Montserrat/woff/Montserrat-Medium.woff?f33760be5076") format("woff"), url("/static/fonts/Montserrat/ttf/Montserrat-Medium.ttf?f33760be5076") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Semibold.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Semibold.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans-Semibold.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans-Semibold.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans-Semibold.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Semibold.ttf?f33760be5076") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Bold.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans-Bold.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans-Bold.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans-Bold.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans-Bold.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Bold.ttf?f33760be5076") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/static/fonts/OpenSans/eot/OpenSans.eot?f33760be5076");
+  src: url("/static/fonts/OpenSans/eot/OpenSans.eot?f33760be5076") format("embedded-opentype"), url("/static/fonts/OpenSans/woff/OpenSans.woff2?f33760be5076") format("woff2"), url("/static/fonts/OpenSans/woff/OpenSans.woff?f33760be5076") format("woff"), url("/static/fonts/OpenSans/svg/OpenSans.svg?f33760be5076") format("svg"), url("/static/fonts/OpenSans/ttf/OpenSans-Regular.ttf?f33760be5076") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 3, globalsolar/static/css/_settings.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
+/* line 16, globalsolar/static/css/_settings.scss */
+input,
+button,
+select,
+a {
+  outline: none; }
+  /* line 22, globalsolar/static/css/_settings.scss */
+  input:focus,
+  button:focus,
+  select:focus,
+  a:focus {
+    outline: none; }
+
+/* line 28, globalsolar/static/css/_settings.scss */
+h1 {
+  font-size: 42px;
+  font-family: "Montserrat-Bold";
+  color: none;
+  font-weight: 900; }
+
+/* line 32, globalsolar/static/css/_settings.scss */
+h2 {
+  font-size: 24px;
+  font-family: "Montserrat-Medium";
+  color: none;
+  font-weight: 500; }
+
+/* line 36, globalsolar/static/css/_settings.scss */
+h3 {
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: none;
+  font-weight: 400; }
+
+/* line 41, globalsolar/static/css/_settings.scss */
+.white-background {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #262a2d;
+  font-weight: 400;
+  line-height: 28px; }
+
+/* line 46, globalsolar/static/css/_settings.scss */
+.another-background {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center; }
+
+/* line 52, globalsolar/static/css/_settings.scss */
+header p {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #212121;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 57, globalsolar/static/css/_settings.scss */
+main p {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #181818;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 62, globalsolar/static/css/_settings.scss */
+.price_p, .prices li, .three_body li {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4d4d4d;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 69, globalsolar/static/css/_settings.scss */
+.menu a {
+  font-size: 17px;
+  font-family: "Open Sans";
+  color: #c4c4c4;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 79, globalsolar/static/css/_settings.scss */
+.menu a:hover {
+  font-size: 17px;
+  font-family: "Montserrat-Bold";
+  color: #2a3546;
+  font-weight: 900;
+  text-decoration: none; }
+
+/* line 92, globalsolar/static/css/_settings.scss */
+.link-footer a {
+  font-size: 14px;
+  font-family: #0e131a;
+  color: "Montserrat";
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 97, globalsolar/static/css/_settings.scss */
+.link-footer a:hover {
+  font-size: 18px;
+  font-family: #0e131a;
+  color: "Montserrat-SemiBold";
+  font-weight: 600;
+  padding: 9px 20px 8px 20px;
+  text-decoration: none; }
+
+/* line 110, globalsolar/static/css/_settings.scss */
+.square {
+  margin: 0;
+  counter-reset: li;
+  list-style: none;
+  background: #d4d2d2;
+  padding: 10px; }
+  /* line 117, globalsolar/static/css/_settings.scss */
+  .square li {
+    position: relative;
+    margin: 0 0 10px 2em;
+    padding: 4px 8px;
+    border-top: 2px solid #acf18a;
+    transition: 0.2s linear; }
+  /* line 125, globalsolar/static/css/_settings.scss */
+  .square li:last-child {
+    margin-bottom: 0; }
+  /* line 129, globalsolar/static/css/_settings.scss */
+  .square li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    width: 2em;
+    box-sizing: border-box;
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #787a77;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background: #c4c5c3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s linear; }
+  /* line 150, globalsolar/static/css/_settings.scss */
+  .square li:hover {
+    border-top: 2px solid #389f70; }
+  /* line 154, globalsolar/static/css/_settings.scss */
+  .square li:hover:before {
+    border: 2px solid #389f70;
+    background: #98eaba; }
+
+/* line 161, globalsolar/static/css/_settings.scss */
+.input_ {
+  background-color: #ffffff;
+  border: #4b434f solid 1px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 400;
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px; }
+
+/* line 171, globalsolar/static/css/_settings.scss */
+.input_:active {
+  background-color: #ffffff;
+  border: #f5584b solid 1px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 400;
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px; }
+
+/* line 181, globalsolar/static/css/_settings.scss */
+.input_:hover {
+  background-color: #ffffff;
+  border: #212121 solid 1px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 400;
+  padding: 15px;
+  height: 45px;
+  border-radius: 30px; }
+
+/* line 1, globalsolar/static/css/views/_top-header.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 6, globalsolar/static/css/views/_top-header.scss */
+.top--header .top--header__bg {
+  background-color: #212121;
+  width: 100%;
+  height: 90px; }
+
+/* line 11, globalsolar/static/css/views/_top-header.scss */
+.top--header span {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ff9f5c;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* line 15, globalsolar/static/css/views/_top-header.scss */
+.top--header a {
+  text-decoration: none; }
+
+/* line 18, globalsolar/static/css/views/_top-header.scss */
+.top--header a:hover {
+  text-decoration: none; }
+
+/* line 21, globalsolar/static/css/views/_top-header.scss */
+.top--header .logo {
+  position: relative; }
+  /* line 23, globalsolar/static/css/views/_top-header.scss */
+  .top--header .logo img {
+    position: absolute;
+    top: 22px; }
+  /* line 27, globalsolar/static/css/views/_top-header.scss */
+  .top--header .logo span {
+    position: absolute;
+    left: 70px;
+    top: 25px; }
+
+/* line 33, globalsolar/static/css/views/_top-header.scss */
+.top--header .pages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; }
+  /* line 37, globalsolar/static/css/views/_top-header.scss */
+  .top--header .pages a {
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 10px 10px 0px; }
+  /* line 41, globalsolar/static/css/views/_top-header.scss */
+  .top--header .pages a:hover {
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: #ff9f5c;
+    font-weight: 400;
+    text-decoration: underline #ff9f5c; }
+
+/* line 46, globalsolar/static/css/views/_top-header.scss */
+.top--header .modal-content {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #212121;
+  font-weight: 400; }
+  /* line 48, globalsolar/static/css/views/_top-header.scss */
+  .top--header .modal-content .input {
+    color: #212121;
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-width: 0 0 1px 0;
+    outline: 0 !important; }
+
+/* line 1, globalsolar/static/css/views/_header.scss */
+body {
+  position: relative; }
+
+/* line 4, globalsolar/static/css/views/_header.scss */
+.banner {
+  background-image: url(/static/img/mainfoto.png?f33760be5076);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  margin: 0;
+  padding: 0; }
+
+/* line 12, globalsolar/static/css/views/_header.scss */
+.more {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  /* line 19, globalsolar/static/css/views/_header.scss */
+  .more .name {
+    font-size: 48px;
+    font-family: "Montserrat";
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+    line-height: 1.25; }
+  /* line 24, globalsolar/static/css/views/_header.scss */
+  .more hr {
+    background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+    width: 70px;
+    height: 1px; }
+  /* line 34, globalsolar/static/css/views/_header.scss */
+  .more p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #181818;
+    font-weight: 400;
+    line-height: 1.857; }
+
+/* line 44, globalsolar/static/css/views/_header.scss */
+.decor {
+  position: absolute;
+  top: 290px;
+  right: 134px;
+  z-index: -1; }
+
+/* line 1, globalsolar/static/css/views/_footer.scss */
+footer {
+  background-color: #212121;
+  width: 100%;
+  height: 210px; }
+  /* line 6, globalsolar/static/css/views/_footer.scss */
+  footer .upper span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #ff9f5c;
+    font-weight: bold; }
+  /* line 15, globalsolar/static/css/views/_footer.scss */
+  footer .upper a {
+    text-decoration: none; }
+  /* line 18, globalsolar/static/css/views/_footer.scss */
+  footer .upper a:hover {
+    text-decoration: none; }
+  /* line 21, globalsolar/static/css/views/_footer.scss */
+  footer .upper .logo {
+    position: relative; }
+    /* line 23, globalsolar/static/css/views/_footer.scss */
+    footer .upper .logo img {
+      position: absolute;
+      top: 22px; }
+    /* line 27, globalsolar/static/css/views/_footer.scss */
+    footer .upper .logo span {
+      position: absolute;
+      left: 70px;
+      top: 35px; }
+  /* line 33, globalsolar/static/css/views/_footer.scss */
+  footer .upper .pages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+    /* line 37, globalsolar/static/css/views/_footer.scss */
+    footer .upper .pages a {
+      font-size: 12px;
+      font-family: "Open Sans";
+      color: #ffffff;
+      font-weight: 400;
+      padding: 10px 10px 10px 0px; }
+    /* line 46, globalsolar/static/css/views/_footer.scss */
+    footer .upper .pages a:hover {
+      font-size: 12px;
+      font-family: "Open Sans";
+      color: #ff9f5c;
+      font-weight: 400;
+      text-decoration: underline #ff9f5c; }
+  /* line 51, globalsolar/static/css/views/_footer.scss */
+  footer .upper .icons {
+    margin-top: 22px;
+    display: flex; }
+    /* line 54, globalsolar/static/css/views/_footer.scss */
+    footer .upper .icons a {
+      font-size: 12px;
+      font-family: "Open Sans";
+      color: #ffffff;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between; }
+      /* line 58, globalsolar/static/css/views/_footer.scss */
+      footer .upper .icons a i,
+      footer .upper .icons a p {
+        padding-left: 15px; }
+  /* line 65, globalsolar/static/css/views/_footer.scss */
+  footer hr {
+    background-color: #29384d; }
+  /* line 68, globalsolar/static/css/views/_footer.scss */
+  footer .copyright {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: #29384d;
+    font-weight: 400;
+    text-align: center; }
+
+/* line 2, globalsolar/static/css/views/_prices.scss */
+.prices .bg_profit_main {
+  padding-top: 50px;
+  background-color: #fafafa; }
+  /* line 5, globalsolar/static/css/views/_prices.scss */
+  .prices .bg_profit_main .profit_main {
+    height: 370px;
+    background-color: #fcfcfc;
+    border-radius: 3px;
+    box-shadow: 0 20px 7px -1px #f1f1f1; }
+    /* line 10, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_profit_main .profit_main h2 {
+      padding-top: 30px;
+      text-align: center; }
+    /* line 14, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_profit_main .profit_main hr {
+      width: 75px;
+      height: 1.5px;
+      border: none;
+      margin: 30px auto;
+      background-color: #f5584b; }
+    /* line 21, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_profit_main .profit_main p {
+      text-align: center; }
+    /* line 24, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_profit_main .profit_main .main_prof {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around; }
+      /* line 28, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_profit_main .profit_main .main_prof img {
+        float: left; }
+      /* line 31, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_profit_main .profit_main .main_prof div {
+        width: 30%; }
+      /* line 34, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_profit_main .profit_main .main_prof h3 {
+        line-height: 70px; }
+
+/* line 40, globalsolar/static/css/views/_prices.scss */
+.prices .info_main {
+  padding: 70px 0 40px 0; }
+  /* line 42, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main img {
+    width: 100%; }
+  /* line 45, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_main_h3 {
+    margin-bottom: 40px; }
+  /* line 49, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_main_p span {
+    font-weight: 600; }
+  /* line 53, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_main_h4 {
+    margin: 30px 0; }
+  /* line 56, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_main_ul {
+    margin-left: 20px; }
+    /* line 58, globalsolar/static/css/views/_prices.scss */
+    .prices .info_main .info_main_ul li {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      list-style-image: url(/static/img/img/li.png?f33760be5076); }
+  /* line 65, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_center .info_center_h3 {
+    margin: 30px 0 20px 0; }
+  /* line 68, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .info_center h5 {
+    margin-bottom: 20px; }
+  /* line 73, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .montag img {
+    width: 100%; }
+  /* line 76, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .montag h5 {
+    margin: 10px 0 15px 0; }
+  /* line 79, globalsolar/static/css/views/_prices.scss */
+  .prices .info_main .montag ul {
+    margin-left: 20px; }
+    /* line 81, globalsolar/static/css/views/_prices.scss */
+    .prices .info_main .montag ul li {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      list-style-image: url(/static/img/img/li.png?f33760be5076); }
+
+/* line 89, globalsolar/static/css/views/_prices.scss */
+.prices .bg_form {
+  background-image: url(/static/img/img/bg_form_2.png?f33760be5076);
+  height: 390px; }
+  /* line 92, globalsolar/static/css/views/_prices.scss */
+  .prices .bg_form .form {
+    padding-top: 40px; }
+    /* line 94, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_form .form .form_h2 {
+      margin-top: 40px;
+      color: #ffffff; }
+    /* line 98, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_form .form p {
+      color: #ffffff; }
+    /* line 101, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_form .form hr {
+      width: 75px;
+      height: 1.5px;
+      border: none;
+      margin: 30px 10px;
+      background-color: #f5584b; }
+    /* line 108, globalsolar/static/css/views/_prices.scss */
+    .prices .bg_form .form .form_ {
+      height: 400px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      box-shadow: 2.5px 5px 5px 5px rgba(241, 241, 241, 0.4); }
+      /* line 113, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_form .form .form_ h3 {
+        margin-top: 30px;
+        text-align: center; }
+      /* line 117, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_form .form .form_ .form_hr {
+        margin: 20px auto 30px auto; }
+      /* line 120, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_form .form .form_ .input {
+        width: 250px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-width: 0 0 1px 0;
+        outline: 0 !important; }
+      /* line 129, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_form .form .form_ input::placeholder {
+        padding-left: 20px; }
+      /* line 132, globalsolar/static/css/views/_prices.scss */
+      .prices .bg_form .form .form_ button {
+        display: block;
+        margin: 30px auto; }
+
+/* line 140, globalsolar/static/css/views/_prices.scss */
+.prices .bg-guarantee {
+  background-color: #ffffff; }
+  /* line 143, globalsolar/static/css/views/_prices.scss */
+  .prices .bg-guarantee .gurantee h2 {
+    margin-top: 60px;
+    font-size: 32px;
+    margin-bottom: 20px; }
+  /* line 148, globalsolar/static/css/views/_prices.scss */
+  .prices .bg-guarantee .gurantee img {
+    width: 100%;
+    margin-top: 30px; }
+  /* line 152, globalsolar/static/css/views/_prices.scss */
+  .prices .bg-guarantee .gurantee .gurantee_info {
+    margin-bottom: 90px; }
+    /* line 154, globalsolar/static/css/views/_prices.scss */
+    .prices .bg-guarantee .gurantee .gurantee_info h6 {
+      margin-bottom: 15px; }
+    /* line 157, globalsolar/static/css/views/_prices.scss */
+    .prices .bg-guarantee .gurantee .gurantee_info ul {
+      margin-left: 20px; }
+      /* line 159, globalsolar/static/css/views/_prices.scss */
+      .prices .bg-guarantee .gurantee .gurantee_info ul li {
+        margin-bottom: 10px;
+        padding-left: 10px;
+        list-style-image: url(/static/img/img/li.png?f33760be5076); }
+
+/* line 1, globalsolar/static/css/views/_contacts.scss */
+.bg-contact {
+  background-color: #ffffff; }
+  /* line 4, globalsolar/static/css/views/_contacts.scss */
+  .bg-contact .contact h1 {
+    margin-top: 70px;
+    text-align: center; }
+  /* line 8, globalsolar/static/css/views/_contacts.scss */
+  .bg-contact .contact p {
+    text-align: center;
+    font-size: 14px; }
+  /* line 12, globalsolar/static/css/views/_contacts.scss */
+  .bg-contact .contact hr {
+    width: 70px;
+    height: 2px;
+    border: none;
+    background-color: #f86e50;
+    margin: 30px auto 20px auto; }
+  /* line 19, globalsolar/static/css/views/_contacts.scss */
+  .bg-contact .contact .bg-mapContact {
+    margin: 70px 0 170px 0; }
+    /* line 21, globalsolar/static/css/views/_contacts.scss */
+    .bg-contact .contact .bg-mapContact .mapContact {
+      height: 350px; }
+    /* line 24, globalsolar/static/css/views/_contacts.scss */
+    .bg-contact .contact .bg-mapContact h2 {
+      margin-bottom: 40px; }
+    /* line 27, globalsolar/static/css/views/_contacts.scss */
+    .bg-contact .contact .bg-mapContact ul {
+      padding: 0;
+      list-style-type: none; }
+      /* line 30, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact ul li {
+        margin-bottom: 20px;
+        padding-left: 30px;
+        font-family: "Montserrat-SemiBold";
+        font-size: 16px; }
+      /* line 36, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact ul .contact_number {
+        list-style-image: url(/img/img/contact_1.png?f33760be5076); }
+        /* line 38, globalsolar/static/css/views/_contacts.scss */
+        .bg-contact .contact .bg-mapContact ul .contact_number .contact_num_none {
+          list-style-image: none;
+          margin: 0;
+          padding: 0; }
+      /* line 44, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact ul .contact_email {
+        list-style-image: url(/img/img/contact_2.png?f33760be5076); }
+      /* line 47, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact ul .contact_street {
+        list-style-image: url(/img/img/contact_3.png?f33760be5076); }
+    /* line 51, globalsolar/static/css/views/_contacts.scss */
+    .bg-contact .contact .bg-mapContact .contact_ {
+      margin-top: 40px; }
+      /* line 53, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact .contact_ p {
+        margin: 0;
+        text-align: left;
+        margin-left: 25px;
+        background: -webkit-linear-gradient(90deg, #f5594b 5%, #ff9f5c 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      /* line 61, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact .contact_ .contact_F {
+        width: 50%; }
+        /* line 63, globalsolar/static/css/views/_contacts.scss */
+        .bg-contact .contact .bg-mapContact .contact_ .contact_F img {
+          float: left; }
+      /* line 67, globalsolar/static/css/views/_contacts.scss */
+      .bg-contact .contact .bg-mapContact .contact_ .contact_T {
+        width: 50%; }
+        /* line 69, globalsolar/static/css/views/_contacts.scss */
+        .bg-contact .contact .bg-mapContact .contact_ .contact_T img {
+          float: left; }
+
+/* line 1, globalsolar/static/css/views/_green_tarif.scss */
+.green {
+  margin: 70px 0 60px 0; }
+  /* line 3, globalsolar/static/css/views/_green_tarif.scss */
+  .green .head {
+    margin-bottom: 60px; }
+    /* line 5, globalsolar/static/css/views/_green_tarif.scss */
+    .green .head h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-family: "Montserrat-Bold";
+      color: #212121;
+      font-weight: 900; }
+    /* line 16, globalsolar/static/css/views/_green_tarif.scss */
+    .green .head hr {
+      background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+      width: 70px;
+      height: 1px;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    /* line 28, globalsolar/static/css/views/_green_tarif.scss */
+    .green .head #head_p {
+      font-size: 14px;
+      font-family: "Montserrat-Medium";
+      color: #212121;
+      font-weight: 600;
+      text-align: center; }
+    /* line 37, globalsolar/static/css/views/_green_tarif.scss */
+    .green .head #main_p {
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: #4d4d4d;
+      font-weight: 500;
+      text-align: justify; }
+
+/* line 48, globalsolar/static/css/views/_green_tarif.scss */
+.bg-stages {
+  background-color: #fafafa;
+  padding: 60px 0 50px 0;
+  margin-bottom: 75px; }
+  /* line 52, globalsolar/static/css/views/_green_tarif.scss */
+  .bg-stages h2 {
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Montserrat-Medium";
+    color: #212121;
+    font-weight: 500; }
+  /* line 62, globalsolar/static/css/views/_green_tarif.scss */
+  .bg-stages .stages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    /* line 67, globalsolar/static/css/views/_green_tarif.scss */
+    .bg-stages .stages .stage img {
+      margin-bottom: 40px; }
+    /* line 70, globalsolar/static/css/views/_green_tarif.scss */
+    .bg-stages .stages .stage .top {
+      text-align: center;
+      line-height: 1.313;
+      font-size: 16px;
+      font-family: "Montserrat-SemiBold";
+      color: #262a2d;
+      font-weight: bold; }
+    /* line 80, globalsolar/static/css/views/_green_tarif.scss */
+    .bg-stages .stages .stage .bottom {
+      text-align: center;
+      line-height: 1.313;
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: #262a2d;
+      font-weight: 400; }
+
+/* line 93, globalsolar/static/css/views/_green_tarif.scss */
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px; }
+  /* line 97, globalsolar/static/css/views/_green_tarif.scss */
+  .info p {
+    text-align: justify;
+    line-height: 1.714;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #4d4d4d;
+    font-weight: 400; }
+
+/* line 103, globalsolar/static/css/views/_green_tarif.scss */
+.discount {
+  margin: 100px 0; }
+  /* line 105, globalsolar/static/css/views/_green_tarif.scss */
+  .discount .green_tarif {
+    margin-bottom: 90px; }
+    /* line 107, globalsolar/static/css/views/_green_tarif.scss */
+    .discount .green_tarif h2 {
+      margin-bottom: 45px;
+      font-size: 32px;
+      font-family: "Montserrat-Medium";
+      color: #212121;
+      font-weight: 500; }
+    /* line 116, globalsolar/static/css/views/_green_tarif.scss */
+    .discount .green_tarif p {
+      text-align: justify;
+      line-height: 1.714;
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: #4d4d4d;
+      font-weight: 400; }
+  /* line 127, globalsolar/static/css/views/_green_tarif.scss */
+  .discount .price_middle {
+    height: 100px;
+    border: 7px solid #ffddc6; }
+    /* line 131, globalsolar/static/css/views/_green_tarif.scss */
+    .discount .price_middle .price_middle_discount img {
+      position: relative;
+      top: 7.5px;
+      left: -40px;
+      z-index: 1;
+      background-color: #fafafa;
+      height: 70px; }
+    /* line 139, globalsolar/static/css/views/_green_tarif.scss */
+    .discount .price_middle .price_middle_discount h4 {
+      line-height: 80px;
+      text-align: center; }
+    /* line 144, globalsolar/static/css/views/_green_tarif.scss */
+    .discount .price_middle .price_middle_text {
+      margin-top: 15px;
+      border: 2px solid #f5584b;
+      border-width: 0 0 0 2px;
+      height: 60px; }
+      /* line 149, globalsolar/static/css/views/_green_tarif.scss */
+      .discount .price_middle .price_middle_text p {
+        text-align: center;
+        line-height: 50px; }
+  /* line 155, globalsolar/static/css/views/_green_tarif.scss */
+  .discount li {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #4d4d4d;
+    font-weight: 400;
+    line-height: 45px;
+    list-style-image: url(/img/img/li.png?f33760be5076); }
+
+/* line 1, globalsolar/static/css/views/_our_works.scss */
+.bg-our_work {
+  margin: 70px 0 60px 0; }
+  /* line 3, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .head {
+    margin-bottom: 60px; }
+    /* line 5, globalsolar/static/css/views/_our_works.scss */
+    .bg-our_work .head h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-family: "Montserrat-Bold";
+      color: #212121;
+      font-weight: 900; }
+    /* line 16, globalsolar/static/css/views/_our_works.scss */
+    .bg-our_work .head hr {
+      background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+      width: 70px;
+      height: 1px;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+  /* line 30, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .work_img img {
+    border-radius: 10px; }
+  /* line 33, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .work_img .green_triangle {
+    font-size: 16px;
+    font-family: "Montserrat-Medium";
+    color: #ffffff;
+    font-weight: 500;
+    position: absolute;
+    bottom: -1px;
+    left: 16px;
+    background: url(/img/our_works/Rectangle.svg?7070debb50fc) no-repeat 0%;
+    width: 135px;
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    background-size: contain;
+    border-bottom-left-radius: 10px; }
+  /* line 53, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .descr {
+    position: relative; }
+    /* line 55, globalsolar/static/css/views/_our_works.scss */
+    .bg-our_work .descr .title-news-blog {
+      font-size: 18px;
+      font-family: "Montserrat-Bold";
+      color: #4c4c4c;
+      font-weight: bold; }
+    /* line 63, globalsolar/static/css/views/_our_works.scss */
+    .bg-our_work .descr li {
+      list-style-image: url(/img/img/li.png?f33760be5076);
+      line-height: 3.314;
+      font-size: 16px;
+      font-family: "Montserrat";
+      color: #4d4d4d;
+      font-weight: 500; }
+  /* line 74, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .one-work {
+    margin-bottom: 50px; }
+  /* line 77, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem; }
+  /* line 83, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work #pagin .navigation {
+    justify-content: center;
+    align-items: center; }
+  /* line 87, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; }
+  /* line 95, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work #pagin .nav-links {
+    display: flex;
+    align-items: center; }
+  /* line 99, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work #pagin .page-numbers {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    background: #f3f3f3;
+    border-radius: 3px;
+    font-family: "Open Sans Semibold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #282828;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    transition: 0.3s;
+    text-decoration: none; }
+  /* line 117, globalsolar/static/css/views/_our_works.scss */
+  .bg-our_work #pagin .page-numbers:hover {
+    background: linear-gradient(90deg, #f5594b 5%, #ff9f5c 95%); }
+
+/* line 2, globalsolar/static/css/views/_one_work.scss */
+.one .img {
+  margin-bottom: 30px; }
+  /* line 4, globalsolar/static/css/views/_one_work.scss */
+  .one .img h1 {
+    font-size: 30px;
+    margin: 50px 0 20px 0; }
+
+/* line 9, globalsolar/static/css/views/_one_work.scss */
+.one li {
+  list-style-image: url(/img/img/li.png?f33760be5076);
+  line-height: 2.314;
+  font-size: 16px;
+  font-family: "Montserrat-Medium";
+  color: #4d4d4d;
+  font-weight: 500; }
+
+/* line 19, globalsolar/static/css/views/_one_work.scss */
+.one button {
+  margin: 30px 0; }
+
+/* line 2, globalsolar/static/css/views/_main_home.scss */
+main .bg_profit_main {
+  background-color: #ffffff; }
+  /* line 3, globalsolar/static/css/views/_main_home.scss */
+  main .bg_profit_main .bg_profit_main_decor {
+    position: absolute;
+    top: 350px;
+    width: 25%;
+    right: 20px;
+    z-index: 0; }
+  /* line 11, globalsolar/static/css/views/_main_home.scss */
+  main .bg_profit_main .profit_main {
+    position: relative;
+    top: -45px;
+    padding-top: 50px;
+    height: 265px;
+    background-color: #fcfcfc;
+    border-radius: 3px;
+    box-shadow: 0 20px 7px -1px #f1f1f1; }
+    /* line 19, globalsolar/static/css/views/_main_home.scss */
+    main .bg_profit_main .profit_main h2 {
+      text-align: center; }
+    /* line 22, globalsolar/static/css/views/_main_home.scss */
+    main .bg_profit_main .profit_main p {
+      text-align: center; }
+    /* line 25, globalsolar/static/css/views/_main_home.scss */
+    main .bg_profit_main .profit_main .main_prof {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around; }
+      /* line 29, globalsolar/static/css/views/_main_home.scss */
+      main .bg_profit_main .profit_main .main_prof img {
+        float: left; }
+      /* line 32, globalsolar/static/css/views/_main_home.scss */
+      main .bg_profit_main .profit_main .main_prof div {
+        width: 30%; }
+      /* line 35, globalsolar/static/css/views/_main_home.scss */
+      main .bg_profit_main .profit_main .main_prof h3 {
+        line-height: 70px; }
+
+/* line 41, globalsolar/static/css/views/_main_home.scss */
+main .info_main {
+  padding: 0px 0 40px 0; }
+  /* line 43, globalsolar/static/css/views/_main_home.scss */
+  main .info_main .info_main_p {
+    margin-top: 0; }
+
+/* line 47, globalsolar/static/css/views/_main_home.scss */
+main .bg_benefits_main {
+  background-color: #fafafa; }
+  /* line 49, globalsolar/static/css/views/_main_home.scss */
+  main .bg_benefits_main .benefits_main {
+    padding: 100px 0 90px 0; }
+    /* line 51, globalsolar/static/css/views/_main_home.scss */
+    main .bg_benefits_main .benefits_main button {
+      float: right; }
+
+/* line 56, globalsolar/static/css/views/_main_home.scss */
+main .bg_need_main {
+  background-image: url(/static/img/img/bg_need_2.png?f33760be5076); }
+  /* line 58, globalsolar/static/css/views/_main_home.scss */
+  main .bg_need_main .need_main {
+    padding: 90px 0; }
+    /* line 61, globalsolar/static/css/views/_main_home.scss */
+    main .bg_need_main .need_main .need_main_text h2,
+    main .bg_need_main .need_main .need_main_text p {
+      text-align: center;
+      color: #ffffff; }
+    /* line 66, globalsolar/static/css/views/_main_home.scss */
+    main .bg_need_main .need_main .need_main_text hr {
+      width: 75px;
+      height: 1px;
+      border: none;
+      margin: 20px auto;
+      background-color: #f5584b; }
+    /* line 75, globalsolar/static/css/views/_main_home.scss */
+    main .bg_need_main .need_main .evidence_need_main img {
+      display: block;
+      margin: 0 auto 20px auto; }
+    /* line 79, globalsolar/static/css/views/_main_home.scss */
+    main .bg_need_main .need_main .evidence_need_main p {
+      text-align: center;
+      color: #ffffff; }
+    /* line 84, globalsolar/static/css/views/_main_home.scss */
+    main .bg_need_main .need_main button {
+      display: block;
+      margin: 30px auto 0 auto; }
+
+/* line 90, globalsolar/static/css/views/_main_home.scss */
+main .bg-advantages {
+  background-color: #ffffff; }
+  /* line 92, globalsolar/static/css/views/_main_home.scss */
+  main .bg-advantages .bg-advantages_decor {
+    position: absolute;
+    top: 2150px;
+    width: 22%;
+    right: -150px;
+    z-index: 0; }
+  /* line 99, globalsolar/static/css/views/_main_home.scss */
+  main .bg-advantages .advantages {
+    padding: 120px 0 80px 0; }
+    /* line 101, globalsolar/static/css/views/_main_home.scss */
+    main .bg-advantages .advantages .advantages_row_one {
+      margin-bottom: 50px; }
+    /* line 104, globalsolar/static/css/views/_main_home.scss */
+    main .bg-advantages .advantages h2 {
+      text-align: center;
+      margin-bottom: 60px; }
+    /* line 108, globalsolar/static/css/views/_main_home.scss */
+    main .bg-advantages .advantages img {
+      float: left;
+      padding-bottom: 50px; }
+    /* line 112, globalsolar/static/css/views/_main_home.scss */
+    main .bg-advantages .advantages h3 {
+      height: 50px;
+      line-height: 30px;
+      font-weight: 600; }
+      /* line 116, globalsolar/static/css/views/_main_home.scss */
+      main .bg-advantages .advantages h3 span {
+        font-size: 64px;
+        color: #f2f2f2;
+        margin: 0;
+        float: right; }
+
+/* line 126, globalsolar/static/css/views/_main_home.scss */
+main .bg_form {
+  background-image: url(/static/img/img/bg_form_2.png?f33760be5076);
+  height: 390px; }
+  /* line 129, globalsolar/static/css/views/_main_home.scss */
+  main .bg_form .bg_form_decor {
+    position: absolute;
+    top: 2650px;
+    width: 20%;
+    left: -100px;
+    z-index: 0; }
+  /* line 136, globalsolar/static/css/views/_main_home.scss */
+  main .bg_form .form {
+    padding-top: 40px; }
+    /* line 138, globalsolar/static/css/views/_main_home.scss */
+    main .bg_form .form .form_h2 {
+      margin-top: 40px;
+      color: #ffffff; }
+    /* line 142, globalsolar/static/css/views/_main_home.scss */
+    main .bg_form .form p {
+      color: #ffffff; }
+    /* line 145, globalsolar/static/css/views/_main_home.scss */
+    main .bg_form .form hr {
+      width: 75px;
+      height: 1px;
+      border: none;
+      margin: 20px 0;
+      background-color: #f5584b; }
+    /* line 152, globalsolar/static/css/views/_main_home.scss */
+    main .bg_form .form .form_ {
+      height: 400px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      box-shadow: 2.5px 5px 5px 5px rgba(241, 241, 241, 0.4); }
+      /* line 157, globalsolar/static/css/views/_main_home.scss */
+      main .bg_form .form .form_ h3 {
+        margin-top: 30px;
+        text-align: center; }
+      /* line 161, globalsolar/static/css/views/_main_home.scss */
+      main .bg_form .form .form_ .form_hr {
+        margin: 20px auto 30px auto; }
+      /* line 164, globalsolar/static/css/views/_main_home.scss */
+      main .bg_form .form .form_ .input {
+        color: #212121;
+        width: 250px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-width: 0 0 1px 0;
+        outline: 0 !important; }
+      /* line 174, globalsolar/static/css/views/_main_home.scss */
+      main .bg_form .form .form_ input::placeholder {
+        padding-left: 20px; }
+      /* line 177, globalsolar/static/css/views/_main_home.scss */
+      main .bg_form .form .form_ button {
+        display: block;
+        margin: 30px auto; }
+
+/* line 184, globalsolar/static/css/views/_main_home.scss */
+main .bg-price {
+  padding: 150px 0 100px 0;
+  background-color: #fafafa; }
+  /* line 187, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .bg-price_decor_1 {
+    position: absolute;
+    top: 3410px;
+    width: 22%;
+    left: 50px;
+    z-index: 0; }
+  /* line 194, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .bg-price_decor_2 {
+    position: absolute;
+    top: 3800px;
+    width: 15%;
+    right: 0px;
+    z-index: 0; }
+  /* line 203, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_top h2,
+  main .bg-price .price .price_top p {
+    text-align: center; }
+  /* line 207, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_top h2 {
+    font-size: 32px; }
+  /* line 210, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_top hr {
+    width: 75px;
+    height: 3px;
+    border: none;
+    margin: 30px auto;
+    background-color: #f5584b; }
+  /* line 218, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_middle {
+    height: 100px;
+    border: 7px solid #ffddc6;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    /* line 224, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_middle .price_middle_discount img {
+      position: relative;
+      top: 7.5px;
+      left: -40px;
+      z-index: 1;
+      background-color: #fafafa;
+      height: 70px; }
+    /* line 232, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_middle .price_middle_discount h4 {
+      line-height: 85px;
+      text-align: center; }
+    /* line 237, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_middle .price_middle_text {
+      margin-top: 15px;
+      border: 2px solid #f5584b;
+      border-width: 0 0 0 2px;
+      height: 60px; }
+      /* line 242, globalsolar/static/css/views/_main_home.scss */
+      main .bg-price .price .price_middle .price_middle_text p {
+        text-align: center;
+        line-height: 60px; }
+  /* line 249, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_bottom .price_black {
+    border-radius: 5px;
+    box-shadow: 0 10px 7px 5px rgba(24, 24, 25, 0.3);
+    height: 500px; }
+    /* line 253, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black .price_black_top {
+      height: 85px;
+      background-color: #4b434f;
+      border-radius: 5px 5px 0 0; }
+      /* line 257, globalsolar/static/css/views/_main_home.scss */
+      main .bg-price .price .price_bottom .price_black .price_black_top h2 {
+        text-align: center;
+        color: #ffffff;
+        line-height: 85px; }
+    /* line 263, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black .price_price {
+      color: #4b434f;
+      font-size: 36px;
+      margin: 30px 0 0 0;
+      text-align: center; }
+    /* line 269, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black .price_hr_top {
+      width: 100px;
+      height: 3px;
+      border: none;
+      margin: 5px auto;
+      background-color: #4b434f; }
+    /* line 276, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black .price_text {
+      margin-left: 30px;
+      margin-bottom: 30px; }
+    /* line 280, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black .price_hr_bottom {
+      height: 1px;
+      border: none;
+      margin: 5px auto;
+      background-color: #d9d9d9; }
+    /* line 286, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_black button {
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 198px;
+      height: 50px;
+      font-size: 14px;
+      font-weight: 600; }
+  /* line 295, globalsolar/static/css/views/_main_home.scss */
+  main .bg-price .price .price_bottom .price_orange {
+    border-radius: 5px;
+    box-shadow: 0 10px 7px 5px rgba(245, 88, 75, 0.3);
+    height: 500px; }
+    /* line 299, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange .price_black_top {
+      height: 85px;
+      background: linear-gradient(90deg, #f5594b 5%, #ff9f5c 95%);
+      border-radius: 5px 5px 0 0; }
+      /* line 303, globalsolar/static/css/views/_main_home.scss */
+      main .bg-price .price .price_bottom .price_orange .price_black_top h2 {
+        text-align: center;
+        color: #ffffff;
+        line-height: 85px; }
+    /* line 309, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange .price_price {
+      color: #4b434f;
+      font-size: 36px;
+      margin: 30px 0 0 0;
+      text-align: center; }
+    /* line 315, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange .price_hr_top {
+      width: 100px;
+      height: 3px;
+      border: none;
+      margin: 5px auto;
+      background-color: #4b434f; }
+    /* line 322, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange .price_text {
+      margin-left: 30px;
+      margin-bottom: 30px; }
+    /* line 326, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange .price_hr_bottom {
+      height: 1px;
+      border: none;
+      margin: 5px auto;
+      background-color: #d9d9d9; }
+    /* line 332, globalsolar/static/css/views/_main_home.scss */
+    main .bg-price .price .price_bottom .price_orange button {
+      display: block;
+      margin: 20px auto 0 auto;
+      font-size: 14px;
+      font-weight: 600; }
+
+/* line 1, globalsolar/static/css/views/_about_us.scss */
+.about {
+  margin: 55px 0 70px 0; }
+  /* line 3, globalsolar/static/css/views/_about_us.scss */
+  .about .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    /* line 10, globalsolar/static/css/views/_about_us.scss */
+    .about .header h1 {
+      font-size: 32px;
+      font-family: "Montserrat";
+      color: #212121;
+      font-weight: 900; }
+    /* line 18, globalsolar/static/css/views/_about_us.scss */
+    .about .header hr {
+      background: linear-gradient(90deg, #f5574b 0%, #fa7953 49%, #ff9e5c 100%);
+      width: 70px;
+      height: 1px; }
+    /* line 28, globalsolar/static/css/views/_about_us.scss */
+    .about .header p {
+      font-size: 14px;
+      font-family: "Montserrat-Medium";
+      color: #212121;
+      font-weight: 400;
+      line-height: 1.25; }
+  /* line 39, globalsolar/static/css/views/_about_us.scss */
+  .about .content p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #4d4d4d;
+    font-weight: 400;
+    line-height: 1.714;
+    text-align: left; }
+  /* line 50, globalsolar/static/css/views/_about_us.scss */
+  .about .our_ambition {
+    margin-top: 40px; }
+    /* line 52, globalsolar/static/css/views/_about_us.scss */
+    .about .our_ambition .img {
+      height: 290px;
+      width: 471px; }
+    /* line 56, globalsolar/static/css/views/_about_us.scss */
+    .about .our_ambition .ambition_middle {
+      height: 130px;
+      border: 7px solid #ffddc6;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      padding-top: 5px; }
+      /* line 63, globalsolar/static/css/views/_about_us.scss */
+      .about .our_ambition .ambition_middle .ambition_border img {
+        position: relative;
+        top: 20.5px;
+        left: -60px;
+        z-index: 1;
+        background-color: #fafafa;
+        height: 70px; }
+      /* line 71, globalsolar/static/css/views/_about_us.scss */
+      .about .our_ambition .ambition_middle .ambition_border h4 {
+        text-align: left;
+        font-size: 14px;
+        font-family: "Montserrat-SemiBold";
+        color: #212121;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin: -55px 0 0 45px; }
+      /* line 84, globalsolar/static/css/views/_about_us.scss */
+      .about .our_ambition .ambition_middle .ambition_text {
+        margin-top: 15px;
+        border: 2px solid #f5584b;
+        border-width: 0 0 0 2px;
+        height: 60px; }
+        /* line 89, globalsolar/static/css/views/_about_us.scss */
+        .about .our_ambition .ambition_middle .ambition_text p {
+          font-size: 12px;
+          font-family: "Open Sans";
+          color: #212121;
+          font-weight: normal; }
+    /* line 99, globalsolar/static/css/views/_about_us.scss */
+    .about .our_ambition .text_out {
+      text-align: justify;
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: #4c4c4c;
+      font-weight: normal; }
+  /* line 109, globalsolar/static/css/views/_about_us.scss */
+  .about .our_methods {
+    margin-top: 70px; }
+    /* line 112, globalsolar/static/css/views/_about_us.scss */
+    .about .our_methods .methods h5 {
+      margin-bottom: 25px;
+      font-size: 16px;
+      font-family: "Montserrat-SemiBold";
+      color: #262a2d;
+      font-weight: normal; }
+    /* line 121, globalsolar/static/css/views/_about_us.scss */
+    .about .our_methods .methods ul {
+      margin-left: 20px; }
+      /* line 123, globalsolar/static/css/views/_about_us.scss */
+      .about .our_methods .methods ul li {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: #4d4d4d;
+        font-weight: normal;
+        text-align: justify;
+        margin-bottom: 40px;
+        padding-left: 10px;
+        list-style-image: url(/img/img/li.png?f33760be5076); }
+
+/* line 139, globalsolar/static/css/views/_about_us.scss */
+.bg-advantages_us {
+  background-color: #fafafa; }
+  /* line 141, globalsolar/static/css/views/_about_us.scss */
+  .bg-advantages_us .advantages {
+    padding: 80px 0 80px 0; }
+    /* line 143, globalsolar/static/css/views/_about_us.scss */
+    .bg-advantages_us .advantages .advantages_row_one {
+      margin-bottom: 50px; }
+    /* line 146, globalsolar/static/css/views/_about_us.scss */
+    .bg-advantages_us .advantages h2 {
+      text-align: center;
+      margin-bottom: 60px; }
+    /* line 150, globalsolar/static/css/views/_about_us.scss */
+    .bg-advantages_us .advantages img {
+      float: left;
+      padding-bottom: 50px; }
+    /* line 154, globalsolar/static/css/views/_about_us.scss */
+    .bg-advantages_us .advantages h3 {
+      height: 50px;
+      line-height: 30px;
+      font-weight: 600; }
+      /* line 158, globalsolar/static/css/views/_about_us.scss */
+      .bg-advantages_us .advantages h3 span {
+        font-size: 64px;
+        color: #f2f2f2;
+        margin: 0;
+        float: right; }
+
+/* line 167, globalsolar/static/css/views/_about_us.scss */
+.bg-scheme {
+  margin-top: 60px;
+  text-align: justify;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4d4d4d;
+  font-weight: 400; }
+  /* line 171, globalsolar/static/css/views/_about_us.scss */
+  .bg-scheme span {
+    font-size: 14px;
+    font-family: "Montserrat-SemiBold";
+    color: #4d4d4d;
+    font-weight: normal; }
+
+/* line 180, globalsolar/static/css/views/_about_us.scss */
+.video {
+  margin-bottom: 30px; }

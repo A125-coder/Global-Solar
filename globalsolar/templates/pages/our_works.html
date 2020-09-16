@@ -1,3 +1,4 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
 <main>
   <div class="container-fluid bg-our_work">
     <div class="container">
@@ -7,19 +8,19 @@
       </div>
       <div class="one-work row">
         <div class="col-6 work_img">
-          <a href="../one_work.html">
+          <a href="/one_work/">
             <div class="green_triangle">
               <span>30 кВт</span>
             </div>
             <img
               width="510"
               height="320"
-              src="../img/our_works/SES_Manevychy_30kwp.jpg"
+              src="{{STATIC_PREFIX}}img/our_works/SES_Manevychy_30kwp.jpg"
             />
           </a>
         </div>
         <div class="col-6 descr">
-          <a class="title-news-blog" href="../one_work.html"
+          <a class="title-news-blog" href="/one_work/"
             >СЕС 30 кВт під Зелений тариф, Копилля – Маневичі, Луцьк, 2019</a
           >
           <ul class="green_disc panels_param">
@@ -31,7 +32,7 @@
             </li>
           </ul>
 
-          <form action="../one_work.html">
+          <form action="/one_work/">
             <button class="btn btn-danger">ЧИТАТИ БІЛЬШЕ</button>
           </form>
         </div>
@@ -45,7 +46,7 @@
             <img
               width="510"
               height="320"
-              src="../img/our_works/SES_30kvt_Zelenyi_tarif_Barmaky_Karasi.jpg"
+              src="{{STATIC_PREFIX}}img/our_works/SES_30kvt_Zelenyi_tarif_Barmaky_Karasi.jpg"
             />
           </a>
         </div>
@@ -73,7 +74,7 @@
             <img
               width="510"
               height="320"
-              src="../img/our_works/7kvt_zeleniy_tariff_rivne-1.jpg"
+              src="{{STATIC_PREFIX}}img/our_works/7kvt_zeleniy_tariff_rivne-1.jpg"
             />
           </a>
         </div>
@@ -112,3 +113,4 @@
     </div>
   </div>
 </main>
+{% endblock %}

@@ -7,7 +7,7 @@ function myMap() {
   let marker = new google.maps.Marker({
     position: myCenter,
     animation: google.maps.Animation.BOUNCE,
-    icon: "../img/img/Vector-Smart-Object_map.png"
+    icon: "../img/img/Vector-Smart-Object_map.png",
   });
   marker.setMap(map);
 }

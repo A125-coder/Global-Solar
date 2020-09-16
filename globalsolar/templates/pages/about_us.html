@@ -1,3 +1,4 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
 <main>
   <div class="container-fluid about">
     <div class="container">
@@ -30,12 +31,14 @@
         </section>
         <section class="our_ambition col-12">
           <div class="row">
-            <div class="img col-5"><img src="../img/about/work.png" /></div>
+            <div class="img col-5">
+              <img src="{{STATIC_PREFIX}}img/about/work.png" />
+            </div>
             <div class="col-6 offset-1">
               <div class="col-12 ambition_middle">
                 <div class="row">
                   <div class="col-5 ambition_border">
-                    <img src="../img/about/team.png" alt="" />
+                    <img src="{{STATIC_PREFIX}}img/about/team.png" alt="" />
                     <div class="row">
                       <h4>
                         Наша амбіція — <br />направити енергію сонця в кожний
@@ -82,7 +85,7 @@
               </ul>
             </div>
             <div class="col-5">
-              <img src="../img/about/work_copy.png" alt="" />
+              <img src="{{STATIC_PREFIX}}img/about/work_copy.png" alt="" />
             </div>
           </div>
         </section>
@@ -95,7 +98,7 @@
         <h2>Наші переваги</h2>
         <div class="row offset-1 advantages_row_one">
           <div class="col-5 p-0">
-            <img src="../img/img/01.png" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/01.png" alt="" />
             <h3>Розробка проекту "під ключ"<span>01</span></h3>
             <p>
               Комплексний підхід дає відповіді на питання: скільки буде
@@ -105,7 +108,7 @@
             </p>
           </div>
           <div class="col-5 offset-1 p-0">
-            <img src="../img/img/02.png" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/02.png" alt="" />
             <h3>Технічна підтримка 24/7/365<span>02</span></h3>
             <p>
               Інженери компанії пройшли спеціалізоване навчання від провідних
@@ -116,7 +119,7 @@
         </div>
         <div class="row offset-1 p-0">
           <div class="col-5">
-            <img src="../img/img/03.png" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/03.png" alt="" />
             <h3>Он-лайн моніторинг<span>03</span></h3>
             <p>
               Постійно відслідковуючи роботу всіх СЕС, що підключені до
@@ -126,7 +129,7 @@
             </p>
           </div>
           <div class="col-5 offset-1 p-0">
-            <img src="../img/img/04.png" alt="" />
+            <img src="{{STATIC_PREFIX}}img/img/04.png" alt="" />
             <h3>Сертифіковане обладнання<span>04</span></h3>
             <p>
               Використовуючи лише сертифіковане обладанання та комплектуючі
@@ -144,7 +147,7 @@
         <div class="row">
           <img
             class="img_scheme col-7"
-            src="../img/about/Vlasne_spozhyvannya_schema-1024x613.png"
+            src="{{STATIC_PREFIX}}img/about/Vlasne_spozhyvannya_schema-1024x613.png"
           />
           <div class="resources col-5">
             <p>
@@ -177,7 +180,16 @@
   </div>
   <div class="container-fluid video">
     <div class="container">
-      <iframe class="col-12" width="1349" height="480" src="https://www.youtube.com/embed/NLO9w963Aj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        class="col-12"
+        width="1349"
+        height="480"
+        src="https://www.youtube.com/embed/NLO9w963Aj0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
 </main>
+{% endblock %}

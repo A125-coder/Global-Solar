@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'solar_pages',
     'rest_framework',
     'compressor',
+    'googlemaps',
 ]
 
 MIDDLEWARE = [
