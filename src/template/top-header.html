@@ -4,13 +4,16 @@
       <div class="row">
         <div class="col-xl-2 col-md-2 logo">
           <a href="index.html">
-          <img src="../img/logo.png" alt="logo" />
-          <span>Global <br> Solar</span>
+            <img src="../img/logo.png" alt="logo" />
+            <span
+              >Global <br />
+              Solar</span
+            >
           </a>
         </div>
         <div class="col-xl-7 col-md-7 pages">
           <div>
-             <a href="../index.html">ГОЛОВНА</a>
+            <a href="../index.html">ГОЛОВНА</a>
           </div>
           <div>
             <a href="../prices.html">ПОСЛУГИ І ЦІНИ</a>
@@ -27,9 +30,72 @@
           <div>
             <a href="#">КАТАЛОГ</a>
           </div>
-      </div>
+        </div>
         <div class="offset-1 col-xl-2 col-md-2 top--header_butons">
-          <button type="submit" class="btn btn-outline-danger">ВХІД</button>
+          <button
+            type="submit"
+            class="btn btn-outline-danger"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            ВХІД
+          </button>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">SIGN IN</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="#" method="POST">
+                  <input
+                    class="input"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required=""
+                  />
+                  <input
+                    class="input"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required=""
+                  />
+                </form>
+                <p>
+                  Don't have an Account?
+                  <a href="../register.html"> Register Now!</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <input type="submit" class="btn-danger sign" value="Sign In" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
