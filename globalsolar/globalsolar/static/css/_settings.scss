@@ -39,7 +39,7 @@ h3 {
 
 // Параграфи
 .white-background {
-  @include font(12px, $font-opensans-reg, $font-main--color-primary_4, 400);
+  @include font(13px, $font-opensans-reg, $font-main--color-primary_4, 400);
   line-height: 28px;
 }
 
@@ -59,7 +59,9 @@ main p {
   text-decoration: none;
 }
 
-.price_p, .prices li,.three_body li{
+.price_p,
+.prices li,
+.three_body li {
   @include font(14px, $font-montserrat-reg, $font-main--color-primary_2, 400);
   text-decoration: none;
 }
