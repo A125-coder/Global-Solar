@@ -1,0 +1,87 @@
+.bg-faq{
+    background-clip: $bg-main--color-primary_3;
+    .faq{
+        .faq-question{
+            padding-bottom: 95px;
+            h1{
+                text-align: center;
+                margin:70px 0 40px 0;
+            }
+            .faq-question_0{
+                height: 75px;
+                border: 2px solid #f2f2f2;
+                border-radius: 2px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                .faq-question_{
+                    font-size: 16px;
+                    font-family: $font-montserrat-semibold;
+                    margin: 0;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.bg_form{
+    background-image: url(../../img/img/bg_form.jpg);
+    height: 390px;
+    .form{
+        padding-top: 40px;
+        .form_h2{
+            margin-top: 40px;
+            color: $default--color__3;
+        }
+        p{
+            color: $default--color__3;
+        }
+        hr{
+            width: 75px;
+            height: 1px;
+            border: none;
+            margin: 20px 0;
+            background-color: $btn--color-primary_1;
+        }
+        .form_{
+            padding: 0 40px;
+            height: 290px;
+            background-color: $default--color__3;
+            border-radius: 3px;
+            .input_0{
+                color: $font-main--color-primary_1;
+                width: 200px;
+                padding: 0 12.5px;
+                height: 40px;
+                display: block;
+                margin: 30px auto 25px auto;
+                border-width: 0 0 1px 0;
+                outline: 0 !important;
+              }
+            .faq_inp_1{
+                margin-left: 20px;
+            }
+            .faq_inp_2{
+                margin-right: 20px;
+            }
+            .input_3{
+                color: $font-main--color-primary_1;
+                width: 98%;
+                padding: 0 1%;
+                height: 80px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                border-width:1px;
+                outline: 0 !important;
+              }
+              button{
+                display: block;
+                margin: 30px 0 30px auto;
+            }
+              
+              
+        }
+    }
+}
