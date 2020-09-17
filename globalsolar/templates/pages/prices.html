@@ -17,23 +17,23 @@
             шаленими темпами.
           </p>
         </div>
-        <div class="col-10 offset-1">
-          <div class="row main_prof menu">
+        <div class="col-10 offset-1 menu">
+          <div class="row main_prof">
             <div>
-              <a href="#"
-                ><img src="{{STATIC_PREFIX}}img/img/profit1.png" alt="" />
+              <a href="{% url 'ses' %}"
+                ><img src="{% static 'img/img/profit1.png' %}" alt="" />
                 <h3>СЕС для бізнесу</h3></a
               >
             </div>
             <div>
-              <a href="/green_tarif/"
-                ><img src="{{STATIC_PREFIX}}img/img/profit2.png" alt="" />
+              <a href="{% url 'green_tarif' %}"
+                ><img src="{% static 'img/img/profit2.png' %}" alt="" />
                 <h3>Зелений тариф</h3></a
               >
             </div>
             <div>
-              <a href="/energy/"
-                ><img src="{{STATIC_PREFIX}}img/img/profit3.png" alt="" />
+              <a href="{% url 'energy' %}"
+                ><img src="{% static 'img/img/profit3.png' %}" alt="" />
                 <h3>Енергонезалежність</h3></a
               >
             </div>

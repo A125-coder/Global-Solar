@@ -9,24 +9,50 @@
                 </a>
               </div>
               <div class="col-xl-7 col-md-7 pages">
-                <div>
-                   <a href="/">ГОЛОВНА</a>
-                </div>
-                <div>
-                  <a href="/prices/">ПОСЛУГИ І ЦІНИ</a>
-                </div>
-                <div>
-                  <a href="#">FAQ</a>
-                </div>
-                <div>
-                  <a href="/contacts/">КОНТАКТИ</a>
-                </div>
-                <div>
-                  <a href="/our_works/">НАШІ РОБОТИ</a>
-                </div>
-                <div>
-                  <a href="#">КАТАЛОГ</a>
-                </div>
+                {% with url_name=request.resolver_match.url_name %}
+          <div>
+            <a
+              class="{% if url_name == 'index' %} active {% endif %}"
+              href="{% url 'index' %}"
+              >ГОЛОВНА</a
+            >
+          </div>
+          <div>
+            <a
+              class="{% if url_name == 'prices' %} active {% endif %}"
+              href="{% url 'prices' %}"
+              >ПОСЛУГИ І ЦІНИ</a
+            >
+          </div>
+          <div>
+            <a
+              class="{% if url_name == 'faq' %} active {% endif %}"
+              href="{% url 'faq' %}"
+              >FAQ</a
+            >
+          </div>
+          <div>
+            <a
+              class="{% if url_name == 'contacts' %} active {% endif %}"
+              href="{% url 'contacts' %}"
+              >КОНТАКТИ</a
+            >
+          </div>
+          <div>
+            <a
+              class="{% if url_name == 'our_works' %} active {% endif %}"
+              href="{% url 'our_works' %}"
+              >НАШІ РОБОТИ</a
+            >
+          </div>
+          <div>
+            <a
+              class="{% if url_name == 'catalog' %} active {% endif %}"
+              href="{% url 'catalog' %}"
+              >КАТАЛОГ</a
+            >
+          </div>
+          {% endwith %}
             </div>
               <div class="offset-1 col-xl-2 col-md-2 top--header_butons">
                 <button type="submit" class="btn btn-outline-danger"

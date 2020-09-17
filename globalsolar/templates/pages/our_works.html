@@ -8,7 +8,7 @@
       </div>
       <div class="one-work row">
         <div class="col-6 work_img">
-          <a href="/one_work/">
+          <a href="{% url 'one_work' %}">
             <div class="green_triangle">
               <span>30 кВт</span>
             </div>
@@ -20,7 +20,7 @@
           </a>
         </div>
         <div class="col-6 descr">
-          <a class="title-news-blog" href="/one_work/"
+          <a class="title-news-blog" href="{% url 'one_work' %}"
             >СЕС 30 кВт під Зелений тариф, Копилля – Маневичі, Луцьк, 2019</a
           >
           <ul class="green_disc panels_param">
@@ -32,7 +32,7 @@
             </li>
           </ul>
 
-          <form action="/one_work/">
+          <form action="{% url 'one_work' %}">
             <button class="btn btn-danger">ЧИТАТИ БІЛЬШЕ</button>
           </form>
         </div>

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-2 col-md-2 logo">
-          <a href="/">
+          <a href="{% url 'index' %}">
             <img src="{{STATIC_PREFIX}}img/logo.png" alt="logo" />
             <span
               >Global <br />
@@ -13,25 +13,52 @@
           </a>
         </div>
         <div class="col-xl-7 col-md-7 pages">
+          {% with url_name=request.resolver_match.url_name %}
           <div>
-            <a href="/">ГОЛОВНА</a>
+            <a
+              class="{% if url_name == 'index' %} active {% endif %}"
+              href="{% url 'index' %}"
+              >ГОЛОВНА</a
+            >
           </div>
           <div>
-            <a href="/prices/">ПОСЛУГИ І ЦІНИ</a>
+            <a
+              class="{% if url_name == 'prices' %} active {% endif %}"
+              href="{% url 'prices' %}"
+              >ПОСЛУГИ І ЦІНИ</a
+            >
           </div>
           <div>
-            <a href="#">FAQ</a>
+            <a
+              class="{% if url_name == 'faq' %} active {% endif %}"
+              href="{% url 'faq' %}"
+              >FAQ</a
+            >
           </div>
           <div>
-            <a href="/contacts/">КОНТАКТИ</a>
+            <a
+              class="{% if url_name == 'contacts' %} active {% endif %}"
+              href="{% url 'contacts' %}"
+              >КОНТАКТИ</a
+            >
           </div>
           <div>
-            <a href="/our_works/">НАШІ РОБОТИ</a>
+            <a
+              class="{% if url_name == 'our_works' %} active {% endif %}"
+              href="{% url 'our_works' %}"
+              >НАШІ РОБОТИ</a
+            >
           </div>
           <div>
-            <a href="#">КАТАЛОГ</a>
+            <a
+              class="{% if url_name == 'catalog' %} active {% endif %}"
+              href="{% url 'catalog' %}"
+              >КАТАЛОГ</a
+            >
           </div>
+          {% endwith %}
         </div>
+
         <div class="offset-1 col-xl-2 col-md-2 top--header_butons">
           <button
             type="submit"
@@ -82,7 +109,7 @@
                 </form>
                 <p>
                   Don't have an Account?
-                  <a href="/register/"> Register Now!</a>
+                  <a href="{% url 'register' %}"> Register Now!</a>
                 </p>
               </div>
               <div class="modal-footer">

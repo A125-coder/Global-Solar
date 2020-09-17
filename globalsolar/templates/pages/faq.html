@@ -1,0 +1,94 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="bg-container bg-faq">
+  <div class="container faq">
+    <div class="col-12 faq-question">
+      <h1>Нас часто запитують</h1>
+      <div class="row">
+        <div class="col-6">
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">
+              Які панелі кращі: полі чи монокристалічні ?
+            </p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">Що таке «зелений» тариф?</p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">Яка вартість «зеленого тарифу» ?</p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">
+              Який перший крок при створенні станції ?
+            </p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">
+              За який термін окупиться вартість встановлення сонячних батарей?
+            </p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">
+              Чи можу я самостійно підключити панелі ?
+            </p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">Скільки потрібно інвестувати ?</p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+          <div class="col-12 faq-question_0">
+            <p class="faq-question_">Який термін служби сонячних батарей?</p>
+            <p class="faq-question_1"></p>
+            <button>згорнуть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg_form">
+  <div class="container form">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-5 offset-1">
+          <h2 class="form_h2">Залишились запитання?</h2>
+          <hr />
+          <p class="">
+            З радістю вам допоможемо, задавайте питання які вас цікавлять
+          </p>
+        </div>
+        <div class="col-6 form_">
+          <div class="row">
+            <input
+              type="text"
+              class="input_0 faq_inp_1"
+              placeholder="Ваше ім’я"
+            />
+            <input
+              type="text"
+              class="input_0 faq_inp_2"
+              placeholder="Ваш E-mail"
+            />
+          </div>
+          <input type="text" class="input_3" placeholder="Питання" />
+          <button class="btn-danger">Відправити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

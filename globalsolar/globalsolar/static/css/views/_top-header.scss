@@ -42,6 +42,9 @@
       @include font(12px, $font-opensans-reg, $font-span--color-primary, 400);
       text-decoration: underline $font-span--color-primary;
     }
+    .active {
+      color: $font-span--color-primary;
+    }
   }
   .modal-content {
     text-align: center;

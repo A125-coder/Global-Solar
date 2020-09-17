@@ -1,9 +1,9 @@
 @import "variables";
+@import "settings";
 @import "fonts";
 
 @import "mixins";
 @import "buttons";
-@import "settings";
 
 @import "views/top-header";
 @import "views/header";
@@ -14,7 +14,23 @@
 @import "views/green_tarif";
 @import "views/our_works";
 @import "views/one_work";
+
+@import "views/top-header";
+@import "views/header";
+@import "views/footer";
+
+@import "views/prices";
+@import "views/contacts";
 @import "views/three";
+@import "views/register";
+@import "views/dashboard";
 
 @import "views/main_home";
 @import "views/about_us";
+
+@import "views/faq";
+
+@import "views/catalog";
+@import "views/product";
+
+@import "views/ses";
