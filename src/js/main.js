@@ -11,6 +11,7 @@ function myMap() {
   });
   marker.setMap(map);
 }
+
 let aboutCompany = document.querySelectorAll('.faq-question_0');
 let aboutCompanyP = document.querySelectorAll('.faq-question_');
 let aboutCompany_textP = document.querySelectorAll('.faq-question_1');
@@ -62,4 +63,20 @@ let aboutCompany_textP = document.querySelectorAll('.faq-question_1');
     })
 }
 
+
+
+let imgProduct = [];
+
+for (let i = 0; i < 4; i++) {
+    imgProduct[i] = src = "../img/img/product_" + [i+1] + ".jpg";
+}
+for (let i = 0; i < 4; i++) {
+  document.querySelector('.product_img_'+[i+1]+'').src = imgProduct[i];
+}
+document.querySelector('.product_img_0').src = imgProduct[0];
+for (let i = 0; i < 4; i++) {
+  document.querySelector('.product_img_'+[i+1]+'').addEventListener('click', () => {
+    document.querySelector(".product_img_0").src = imgProduct[i];
+  })
+}
 
