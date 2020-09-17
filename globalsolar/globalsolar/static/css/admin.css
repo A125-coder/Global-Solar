@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-Regular.woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat/woff/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Montserrat/woff/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../fonts/Montserrat/woff/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat/woff/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat/ttf/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open_Sans_Semibold;
+  src: url("../fonts/OpenSans/eot/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans-Semibold.eot")
+      format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans-Semibold.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans-Semibold.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans-Semibold.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open_Sans_Bold;
+  src: url("../fonts/OpenSans/eot/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans-Bold.eot")
+      format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans-Bold.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open_Sans;
+  src: url("../fonts/OpenSans/eot/OpenSans.eot");
+  src: url("../fonts/OpenSans/eot/OpenSans.eot") format("embedded-opentype"),
+    url("../fonts/OpenSans/woff/OpenSans.woff2") format("woff2"),
+    url("../fonts/OpenSans/woff/OpenSans.woff") format("woff"),
+    url("../fonts/OpenSans/svg/OpenSans.svg") format("svg"),
+    url("../fonts/OpenSans/ttf/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#header {
+  background-color: #212121;
+  height: 50px;
+  color: #fff;
+}
+#branding h1 {
+  color: #ff9f5c;
+  font-family: Montserrat-SemiBold;
+  font-size: 32px;
+}
+#container {
+  background-image: url(../img/mainfoto.png);
+}
+#user-tools {
+  font-family: Montserrat-Medium;
+  font-size: 12px;
+}
+#user-tools a:hover {
+  color: #ff9f5c;
+  border-bottom-color: #ff9f5c;
+}
+#content h1 {
+  color: #181818;
+  font-family: Montserrat-Medium;
+  font-size: 32px;
+}
+.module caption {
+  background-color: #212121;
+}
+.module a {
+  font-family: Montserrat-Medium;
+  color: #ff9f5c;
+}
+div.breadcrumbs {
+  background-color: #4c4c4c;
+}
+div.breadcrumbs a:link {
+  color: #fff;
+}
+div.breadcrumbs a:visited {
+  color: #ff9f5c;
+}
+div.breadcrumbs a:hover {
+  color: #ff9f5c;
+}
+div.breadcrumbs a:active {
+  color: #ff9f5c;
+}
+#changelist-filter h2,
+.aligned h2,
+.selector-chosen h2 {
+  font-family: Montserrat;
+  color: #fff;
+  background-color: #4c4c4c;
+}
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 89, 75, 1) 5%,
+    rgba(255, 159, 92, 1) 95%
+  );
+  font-family: Montserrat;
+}
+.button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+.button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: #fff;
+  box-shadow: 2px 1px 2px 0px rgba(251, 131, 85, 0.4);
+  color: #212121;
+  font-family: Montserrat;
+}
+.submit-row a.deletelink {
+  font-family: Montserrat;
+}
