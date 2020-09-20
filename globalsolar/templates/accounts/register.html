@@ -2,6 +2,8 @@
 
 <!-- Main Content -->
 <div class="container-fluid custom">
+	{% include 'partials/_alerts.html' %}
+
 	<div class="main-content ">
 		<div class="row">
 			<form control="" action="{% url 'register'%}" method="POST" class="form-group formregister">
@@ -18,7 +20,7 @@
 				</div>
 				<div class="down">
 					<input type="submit" value="Submit" class="btn-danger">
-					<p>Я вже з вами!<a href="#">Login</a></p>
+					<!-- <p>Я вже з вами!<a href="#">Login</a></p> -->
 				</div>
 
 			</form>

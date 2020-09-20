@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.contrib import auth
+from django.contrib import auth, messages
 from django.contrib.auth.models import User
 
 # Create your views here.
@@ -70,10 +70,10 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            print('Вітаємо! Ви залогінились')
+            messages.success(request, 'Вітаємо! Ви залогінились')
             return redirect("dashboard")
         else:
-            print("Невірний логін або пароль")
+            messages.error(request, 'Невірний логін або пароль')            
             return redirect(index)
 
     else:

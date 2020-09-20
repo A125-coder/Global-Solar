@@ -23,6 +23,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
     {% compress css %}
     <link
       rel="stylesheet"
@@ -51,8 +52,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_EekhsgeMp9-WTtd5MNT1Xcj_lFBzFU&callback=myMap"></script>
+    <!-- <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' %}"></script>
+    <script src="{% static 'js/allerts.js' %}"></script> -->
     {% compress js %}
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/allerts.js' %}"></script>
     {% endcompress %}
   </body>
 </html>

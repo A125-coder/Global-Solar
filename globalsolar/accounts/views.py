@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.contrib import auth
+from django.contrib import auth, messages
 from django.contrib.auth.models import User
 
 
@@ -32,11 +32,11 @@ def register(request):
 
         if password == confirmpassword:
             if User.objects.filter(username=username).exists():
-                print("User exists")
+                messages.error(request, 'Користувач з таким ім"ям вже існує')
                 return redirect('register')
             else: 
                 if User.objects.filter(email=email).exists():
-                    print("Email exists")
+                    messages.error(request, 'Такие емейл вже існує')
                     return redirect('register')
                 else:
                     user = User.objects.create_user(
@@ -47,11 +47,11 @@ def register(request):
                         last_name = last_name
                     )
                     user.save()
-                    print("Ви успішно зареєструвались! ")
+                    messages.success(request, 'Ви успішно зареєструвались!')
                     return redirect('dashboard')
 
         else:
-            print("Паролі не співпадають!")
+            messages.error(request, "Паролі не співпадають!")
             return redirect('register')
 
             
@@ -62,4 +62,6 @@ def register(request):
 
 
 def logout(request):
-    return render(request, 'accounts/logout.html')
+    if request.method == 'POST':
+        auth.logout(request)
+    return redirect(request, "pages/home.html")
