@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'compressor',
     'googlemaps',
     'active_link',
+    'accounts',
 ]
 
 MIDDLEWARE = [

@@ -91,7 +91,8 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form action="#" method="POST">
+                <form action="{% url 'login'%}" method="POST" >
+                  {% csrf_token %}
                   <input
                     class="input"
                     type="text"
@@ -106,21 +107,21 @@
                     placeholder="Password"
                     required=""
                   />
-                </form>
+               
                 <p>
                   Don't have an Account?
                   <a href="{% url 'register' %}"> Register Now!</a>
                 </p>
               </div>
               <div class="modal-footer">
-                <button
+                <!-- <button
                   type="button"
                   class="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
-                </button>
-                <input type="submit" class="btn-danger sign" value="Sign In" />
+                </button> -->
+                <input type="submit" class="btn-danger sign" value="Sign In" /> </form>
               </div>
             </div>
           </div>
