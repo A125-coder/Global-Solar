@@ -62,13 +62,16 @@
     }
     li {
       list-style-image: url(../img/img/li.png);
-      line-height: 3.314;
+      line-height: 2.814;
       @include font(
         16px,
         $font-montserrat-reg,
         $font-main--color-primary_2,
         500
       );
+    }
+    .btn > a {
+      padding-top: 15px;
     }
   }
   .one-work {

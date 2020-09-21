@@ -35,14 +35,6 @@ def energy(request):
     return render(request, 'pages/energy.html')
 
 
-def our_works(request):
-    return render(request, 'pages/our_works.html')
-
-
-def one_work(request):
-    return render(request, 'pages/one_work.html')
-
-
 def catalog(request):
     return render(request, 'pages/catalog.html')
 
@@ -55,5 +47,5 @@ def ses(request):
     return render(request, 'pages/ses.html')
 
 
-def  faq(request):
+def faq(request):
     return render(request, 'pages/faq.html')
