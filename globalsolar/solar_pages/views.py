@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from catalog.models import Catalog
 
 # Create your views here.
 
@@ -12,6 +13,7 @@ def about(request):
 
 
 def prices(request):
+
     return render(request, 'pages/prices.html')
 
 
@@ -43,12 +45,7 @@ def one_work(request):
     return render(request, 'pages/one_work.html')
 
 
-def catalog(request):
-    return render(request, 'pages/catalog.html')
 
-
-def product(request):
-    return render(request, 'pages/product.html')
 
 
 def ses(request):

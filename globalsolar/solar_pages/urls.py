@@ -12,8 +12,6 @@ urlpatterns = [
     path('energy/', views.energy, name="energy"),
     path('one_work/', views.one_work, name="one_work"),
     path('our_works/', views.our_works, name="our_works"),
-    path('catalog/', views.catalog, name="catalog"),
-    path('product/', views.product, name="product"),
     path('ses/', views.ses, name="ses"),
     path('faq/', views.faq, name="faq"),
 ]

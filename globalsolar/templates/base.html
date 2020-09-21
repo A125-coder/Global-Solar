@@ -52,7 +52,9 @@
     ></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_EekhsgeMp9-WTtd5MNT1Xcj_lFBzFU&callback=myMap"></script>
     {% compress js %}
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/main.js' %}">
+      DJANGO_STATIC_URL = '{{ STATIC_URL }}';
+    </script>
     {% endcompress %}
   </body>
 </html>
