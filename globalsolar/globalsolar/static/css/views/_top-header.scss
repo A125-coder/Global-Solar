@@ -30,7 +30,11 @@
       top: 25px;
     }
   }
-
+  .merg{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  }
   
   .pages {
     display: flex;
@@ -55,9 +59,10 @@
       @include font(12px, $font-opensans-reg, $btn--color-primary_1, 400);
       padding: 10px 10px 10px 0px;
     }
+    
   }
-  
-  .modal-content {
+ 
+   .modal-content {
     text-align: center;
     .input {
       color: $font-main--color-primary_1;

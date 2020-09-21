@@ -60,11 +60,11 @@
           {% endwith %}
         </div>
 
-        <div class="col-xl-3 col-md-3 top--header_butons row reg">
+        <div class="col-xl-3 col-md-3 reg top--header_butons row ">
           {% if user.is_authenticated %}
-          <div {%if 'dashboard' in request.path %} class="nav-item active" {% else %} class="nav-item" 
+          <div {%if 'dashboard' in request.path %} class="nav-item active merg" {% else %} class="nav-item " 
           {% endif %}>
-        <a href = "{% url 'dashboard' %}"> Вітаю {{ user.username }}</a>
+        <a  href = "{% url 'dashboard' %}"> Вітаю {{ user.username }}</a>
         </div>
           
 
@@ -82,7 +82,7 @@
         </form>
        
         {%else%}
-        <div class="reg">
+        <div class="merg">
           <a
             class=" {% if url_name == 'register' %} active {% endif %}"
             href="{% url 'register' %}"

@@ -47,8 +47,8 @@ def register(request):
                         last_name = last_name
                     )
                     user.save()
-                    messages.success(request, 'Ви успішно зареєструвались!')
-                    return redirect('dashboard')
+                    messages.success(request, 'Ви успішно зареєструвались! Залогіньтесь, будь ласка!')
+                    return redirect('index')
 
         else:
             messages.error(request, "Паролі не співпадають!")
@@ -64,4 +64,4 @@ def register(request):
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
-    return redirect(request, "pages/home.html")
+    return redirect("index")

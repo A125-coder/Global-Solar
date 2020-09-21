@@ -73,7 +73,7 @@ def login(request):
             messages.success(request, 'Вітаємо! Ви залогінились')
             return redirect("dashboard")
         else:
-            messages.error(request, 'Невірний логін або пароль')            
+            messages.error(request, 'Невірний логін або пароль, спробуйте ще раз!')            
             return redirect(index)
 
     else:
