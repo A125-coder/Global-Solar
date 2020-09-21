@@ -139,7 +139,7 @@
           <div class="col-5 p-0 form_">
             <h3>Залиште, будь ласка, свої контакти!</h3>
             <hr class="form_hr" />
-            <form action="{% url 'index' %}" method="POST">
+            <form action="{% url 'prices' %}" method="POST">
               {% csrf_token %}
               <input
                 type="text"
