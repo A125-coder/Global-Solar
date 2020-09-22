@@ -148,11 +148,15 @@
                         <h3>Залиште, будь ласка,
                             свої контакти!</h3>
                         <hr class="form_hr">
-                        <input type="text" class="input " placeholder="Ваше ім’я">
-                        <input type="text" class="input " placeholder="Ваш телефон">
-                        <input type="text" class="input " placeholder="Ваш E-mail">
-                        <input type="text" class="input " placeholder="Споживання. кВт">
-                        <button class="btn-danger">Відправити</button>
+                        <form action="{% url 'index' %}" method="POST">
+                            {% csrf_token %}
+                        <input type="text" class="input " name="name" placeholder="Ваше ім’я">
+                        <input type="text" class="input " name='phone' placeholder="Ваш телефон">
+                        <input type="text" class="input " name='email' placeholder="Ваш E-mail">
+                        <input type="text" class="input " name='volts' placeholder="Споживання. кВт">
+                        
+                        <button type='submit' class="btn-danger">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </div>

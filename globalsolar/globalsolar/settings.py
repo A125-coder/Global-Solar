@@ -42,7 +42,12 @@ INSTALLED_APPS = [
     'compressor',
     'googlemaps',
     'active_link',
+<<<<<<< HEAD
     'catalog',
+=======
+    'portfolio',
+    'contacts',
+>>>>>>> server
 ]
 
 MIDDLEWARE = [
@@ -143,3 +148,10 @@ COMPRESS_PRECOMPILERS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/uploads/'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sup2a1nn@gmail.com'  # Ваша електронка
+EMAIL_HOST_PASSWORD = "#"  # Ваш пароль від електронки - реальний
+EMAIL_USE_TLS = True

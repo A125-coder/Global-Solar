@@ -1,10 +1,30 @@
+<<<<<<< HEAD
 from django.shortcuts import render
 from catalog.models import Catalog
+=======
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+>>>>>>> server
 
 # Create your views here.
 
 
 def index(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/home.html')
 
 
@@ -13,7 +33,25 @@ def about(request):
 
 
 def prices(request):
+<<<<<<< HEAD
 
+=======
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
+>>>>>>> server
     return render(request, 'pages/prices.html')
 
 
@@ -37,13 +75,8 @@ def energy(request):
     return render(request, 'pages/energy.html')
 
 
-def our_works(request):
-    return render(request, 'pages/our_works.html')
-
-
-def one_work(request):
-    return render(request, 'pages/one_work.html')
-
+def catalog(request):
+    return render(request, 'pages/catalog.html')
 
 
 
@@ -52,5 +85,18 @@ def ses(request):
     return render(request, 'pages/ses.html')
 
 
-def  faq(request):
+def faq(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        question = request.POST["question"]
+
+        send_mail(
+            "Моє запитання",
+            question + ", " + name + ", " + email,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/faq.html')

@@ -10,8 +10,13 @@ urlpatterns = [
     path('green_tarif/', views.green_tarif, name="green_tarif"),
     path('register/', views.register, name="register"),
     path('energy/', views.energy, name="energy"),
+<<<<<<< HEAD
     path('one_work/', views.one_work, name="one_work"),
     path('our_works/', views.our_works, name="our_works"),
+=======
+    path('catalog/', views.catalog, name="catalog"),
+    path('product/', views.product, name="product"),
+>>>>>>> server
     path('ses/', views.ses, name="ses"),
     path('faq/', views.faq, name="faq"),
 ]
