@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 from django.shortcuts import render
 from catalog.models import Catalog
-=======
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
->>>>>>> server
 
 # Create your views here.
 
@@ -33,9 +30,7 @@ def about(request):
 
 
 def prices(request):
-<<<<<<< HEAD
 
-=======
     if request.method == "POST":
         name = request.POST["name"]
         email = request.POST["email"]
@@ -51,7 +46,6 @@ def prices(request):
             ['sup2a1nn@gmail.com'],
             fail_silently=False
         )
->>>>>>> server
     return render(request, 'pages/prices.html')
 
 
