@@ -25,10 +25,10 @@
             <li><a href="#">Мережеві (зелений тариф)</a></li>
           </ul>
           <ul>
-            <h3><a href="{{ SolarPanels }}">Сонячні панелі</a></h3>
+            <h3><a href="{% url 'SolarPanels' %}">Сонячні панелі</a></h3>
             <hr />
-            <li><a href="{{ monocrystalline }}">Монокристалічні</a></li>
-            <li><a href="{{ polycrystalline }}">Полікристалічні</a></li>
+            <li><a href="{% url 'monocrystalline' %}">Монокристалічні</a></li>
+            <li><a href="{% url 'polycrystalline' %}">Полікристалічні</a></li>
           </ul>
         </div>
       </div>
