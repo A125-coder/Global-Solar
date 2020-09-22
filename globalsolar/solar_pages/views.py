@@ -1,9 +1,25 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
 
 # Create your views here.
 
 
 def index(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/home.html')
 
 
@@ -12,6 +28,21 @@ def about(request):
 
 
 def prices(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/prices.html')
 
 
@@ -48,4 +79,17 @@ def ses(request):
 
 
 def faq(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        question = request.POST["question"]
+
+        send_mail(
+            "Моє запитання",
+            question + ", " + name + ", " + email,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/faq.html')

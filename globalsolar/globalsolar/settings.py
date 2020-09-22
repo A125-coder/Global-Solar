@@ -149,5 +149,5 @@ MEDIA_URL = '/uploads/'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sup2a1nn@gmail.com'  # Ваша електронка
-EMAIL_HOST_PASSWORD = "№"  # Ваш пароль від електронки - реальний
+EMAIL_HOST_PASSWORD = "#"  # Ваш пароль від електронки - реальний
 EMAIL_USE_TLS = True
