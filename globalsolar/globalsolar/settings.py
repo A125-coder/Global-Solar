@@ -42,8 +42,12 @@ INSTALLED_APPS = [
     'compressor',
     'googlemaps',
     'active_link',
+<<<<<<< HEAD
+    'catalog',
+=======
     'portfolio',
     'contacts',
+>>>>>>> server
 ]
 
 MIDDLEWARE = [

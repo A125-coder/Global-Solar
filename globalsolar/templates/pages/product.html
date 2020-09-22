@@ -2,35 +2,29 @@
 <div class="container-fluid bg-product">
   <div class="container product">
     <div class="col-12 product_head">
-      <h2>СЕС 500кВт під власне споживання</h2>
+        {% csrf_token %}
+      <h2>{{ product.title }}</h2>
     </div>
     <div class="row">
       <div class="col-6 product_img">
-        <img class="product_img_0" src="" alt="" />
+        <img class="product_img_0" src="{{ product.photo_1.url }}" alt="" />
         <div class="row">
-          <img class="product_img_1 product_img_" src="" alt="" />
-          <img class="product_img_2 product_img_" src="" alt="" />
-          <img class="product_img_3 product_img_" src="" alt="" />
-          <img class="product_img_4 product_img_" src="" alt="" />
+          <img class="product_img_1 product_img_" src="{{ product.photo_0.url }}" alt="" />
+          <img class="product_img_2 product_img_" src="{{ product.photo_1.url }}" alt="" />
+          <img class="product_img_3 product_img_" src="{{ product.photo_2.url }}" alt="" />
+          <img class="product_img_4 product_img_" src="{{ product.photo_3.url }}" alt="" />
         </div>
       </div>
       <div class="col-6 product_info">
-        <p>
-          Xарактеристика сонячної електростанції 500 кВт на власні потреби
-          підприємства/виробництва:
-        </p>
+        <p>{{ product.description }}</p>
         <ul>
-          <li><span>Річна генерація:</span> 573 700 кВт × год</li>
-          <li><span>Заміщення електроенергії:</span> до 100%</li>
-          <li><span>Потенційна економія:</span> $67 500/рік</li>
-          <li><span>Вартість:</span> $325 000</li>
-          <li><span>Термін окупності:</span> 4.7 років</li>
-          <li><span>Потужність, кВт:</span> 500 кВт</li>
-          <li><span>Вартість кВт*год з СЕС:</span> 0.57 грн/кВт × год</li>
-          <li><span>Необхідна площа:</span> 2 582 м2</li>
-          <li><span>Вага модулів:</span> 28 170 кг</li>
-          <li><span>Система енергомоніторингу:</span> Fronius SolarWeb</li>
-          <li><span>Виробництво:</span> Європа</li>
+          <li><span>Тип:</span> {{ product.catalog_type }}</li>
+          <li><span>Вартість:</span> {{ product.price }}$</li>
+          <li><span>Потужність, кВт:</span> {{ product.power }}</li>
+          <li><span>Необхідна площа:</span> {{ product.size }} м2</li>
+          <li><span>Вага модулів:</span>{{ product.weight }} кг</li>
+          <li><span>Гарантія:</span> {{ product.guarantee }}</li>
+          <li><span>Виробництво:</span> {{ product.made }}</li>
         </ul>
         <button class="btn-danger">Замовити</button>
       </div>

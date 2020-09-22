@@ -33,9 +33,9 @@
         </div>
       </div>
       <div class="catalog_tovaru col-9">
-          {% if catalog %}
+          {% if SolarPanels %}
         <div class="row">
-            {% for product in catalog %}
+            {% for product in SolarPanels %}
           <div class="col-4">
             <a href="{% url 'product' product.id  %}">
               <div class="price_black">
