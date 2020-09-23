@@ -55,19 +55,49 @@
               href="{% url 'catalog' %}"
               >КАТАЛОГ</a
             >
-          </div>
+          </div>          
+          
           {% endwith %}
         </div>
 
-        <div class="offset-1 col-xl-2 col-md-2 top--header_butons">
+        <div class="col-xl-3 col-md-3 reg top--header_butons row ">
+          {% if user.is_authenticated %}
+          <div {%if 'dashboard' in request.path %} class="nav-item active merg" {% else %} class="nav-item " 
+          {% endif %}>
+        <a  href = "{% url 'dashboard' %}"> Вітаю {{ user.username }}</a>
+        </div>
+          
+
+        <div class="nav-item mr3">
           <button
             type="submit"
             class="btn btn-outline-danger"
+            
+          >
+          <a href="javascript:{document.getElementById('logout').submit()}">Вихід</a></button>
+        </div>
+        <form action="{% url 'logout' %}" id="logout" method="POST">
+          {% csrf_token %}
+          <input type="hidden" />
+        </form>
+       
+        {%else%}
+        <div class="merg">
+          <a
+            class=" {% if url_name == 'register' %} active {% endif %}"
+            href="{% url 'register' %}"
+            >Реєстрація</a
+          >
+        </div>
+
+          <button {% if 'login' in request.path %} class="btn btn-outline-danger nav-item active" {% else %} class="nav-item btn btn-outline-danger" {% endif %}
+            type="submit"
             data-toggle="modal"
             data-target="#exampleModalCenter"
           >
             ВХІД
           </button>
+          {% endif %}
         </div>
         <div
           class="modal fade"
@@ -91,7 +121,8 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form action="#" method="POST">
+                <form action="{% url 'login'%}" method="POST" >
+                  {% csrf_token %}
                   <input
                     class="input"
                     type="text"
@@ -106,21 +137,21 @@
                     placeholder="Password"
                     required=""
                   />
-                </form>
+               
                 <p>
                   Don't have an Account?
                   <a href="{% url 'register' %}"> Register Now!</a>
                 </p>
               </div>
               <div class="modal-footer">
-                <button
+                <!-- <button
                   type="button"
                   class="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
-                </button>
-                <input type="submit" class="btn-danger sign" value="Sign In" />
+                </button> -->
+                <input type="submit" class="btn-danger sign" value="Sign In" /> </form>
               </div>
             </div>
           </div>

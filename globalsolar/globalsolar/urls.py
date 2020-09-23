@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('solar_pages.urls')),
+    path('accounts/', include('accounts.urls')),
     path('portfolio/', include('portfolio.urls')),
     path('contacts/', include('contacts.urls')),
     path('admin/', admin.site.urls),

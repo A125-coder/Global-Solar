@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Main Content -->
+<div class="container-fluid custom">
+	{% include 'partials/_alerts.html' %}
+
+	<div class="main-content ">
+		<div class="row">
+			<form control="" action="{% url 'register'%}" method="POST" class="form-group formregister">
+				{%csrf_token%}
+				<h2>Приєднуйтесь до нас!</h2>
+				<div>
+					<input type="text" name="first_name" id="first_name" class="form__input" placeholder="First name">
+					<input type="text" name="surname" id="surname" class="form__input" placeholder="Surname">
+					<input type="text" name="username" id="username" class="form__input" placeholder="Username">
+					<input type="email" name="email" id="email" class="form__input" placeholder="Email">
+					<input type="password" name="password" id="password" class="form__input" placeholder="Password">
+					<input type="password" name="confirmpassword" id="confirmpassword" class="form__input"
+						placeholder="Confirm password">
+				</div>
+				<div class="down">
+					<input type="submit" value="Submit" class="btn-danger">
+					<!-- <p>Я вже з вами!<a href="#">Login</a></p> -->
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Footer -->
+
+{% endblock %}

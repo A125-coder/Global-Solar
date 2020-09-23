@@ -1,6 +1,8 @@
-from django.shortcuts import render
+
+from django.shortcuts import render,redirect
+from django.contrib import auth, messages
+from django.contrib.auth.models import User
 from catalog.models import Catalog
-from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 
 # Create your views here.
@@ -94,3 +96,22 @@ def faq(request):
             fail_silently=False
         )
     return render(request, 'pages/faq.html')
+
+
+def login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+
+        if user is not None:
+            auth.login(request, user)
+            messages.success(request, 'Вітаємо! Ви залогінились')
+            return redirect("dashboard")
+        else:
+            messages.error(request, 'Невірний логін або пароль, спробуйте ще раз!')            
+            return redirect(index)
+
+    else:
+        return render(request, index)
