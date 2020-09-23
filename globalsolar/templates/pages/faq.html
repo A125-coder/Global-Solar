@@ -72,20 +72,30 @@
           </p>
         </div>
         <div class="col-6 form_">
-          <div class="row">
+          <form action="{% url 'faq' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+              <input
+                type="text"
+                class="input_0 faq_inp_1"
+                name="name"
+                placeholder="Ваше ім’я"
+              />
+              <input
+                type="text"
+                class="input_0 faq_inp_2"
+                name="email"
+                placeholder="Ваш E-mail"
+              />
+            </div>
             <input
               type="text"
-              class="input_0 faq_inp_1"
-              placeholder="Ваше ім’я"
+              class="input_3"
+              name="question"
+              placeholder="Питання"
             />
-            <input
-              type="text"
-              class="input_0 faq_inp_2"
-              placeholder="Ваш E-mail"
-            />
-          </div>
-          <input type="text" class="input_3" placeholder="Питання" />
-          <button class="btn-danger">Відправити</button>
+            <button type="submit" class="btn-danger">Відправити</button>
+          </form>
         </div>
       </div>
     </div>

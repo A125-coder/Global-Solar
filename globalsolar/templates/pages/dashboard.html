@@ -22,6 +22,7 @@
               type="text"
               name="Name"
               placeholder="Name"
+              value="{{user.first_name}}"
               required=""
             />
             <input
@@ -29,13 +30,7 @@
               type="text"
               name="Surname"
               placeholder="Surname"
-              required=""
-            />
-            <input
-              class="input"
-              type="text"
-              name="tel_num"
-              placeholder="Tel. Number"
+              value="{{user.last_name}}"
               required=""
             />
             <input
@@ -43,6 +38,7 @@
               type="email"
               name="email"
               placeholder="Email"
+              value="{{user.email}}"
               required=""
             />
             <input
@@ -50,11 +46,20 @@
               type="text"
               name="address"
               placeholder="Address"
+              value="{{user.address}}"
             />
-            <input type="submit" class="btn-danger change" value="Submit Information" />
+            <input type="submit" class="btn-danger change" value="Submit Change" />
           </form>
         </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><form>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <form>
+            <input
+            class="input"
+            type="password"
+            name="old_password"
+            placeholder="Old Password"
+            required=""
+          />
             <input
             class="input"
             type="password"

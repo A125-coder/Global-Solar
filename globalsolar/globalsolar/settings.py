@@ -26,7 +26,7 @@ SECRET_KEY = 'ol^6&w1#qh0cr*q=i(rr^%__+61el!(4^h2)dg+w#5ga1$6i1w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'googlemaps',
     'active_link',
     'accounts',
+    'catalog',
+    'portfolio',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -148,3 +151,9 @@ MEDIA_URL = '/uploads/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sup2a1nn@gmail.com'  # Ваша електронка
+EMAIL_HOST_PASSWORD = "#"  # Ваш пароль від електронки - реальний
+EMAIL_USE_TLS = True

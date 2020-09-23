@@ -19,4 +19,21 @@
   button {
     margin: 30px 0;
   }
+  .modal-content {
+    text-align: center;
+    .input {
+      color: $font-main--color-primary_1;
+      width: 250px;
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      border-width: 0 0 1px 0;
+      outline: 0 !important;
+    }
+    .submit {
+      width: 150px;
+    }
+    @include font(16px, $font-opensans-reg, $font-main--color-primary_1, 400);
+  }
 }
