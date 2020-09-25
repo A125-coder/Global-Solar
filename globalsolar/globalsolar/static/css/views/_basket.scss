@@ -1,0 +1,37 @@
+.bg-basket{
+    background-color: $bg-main--color-primary_2;
+    .bascket{
+        padding-bottom: 20px;
+        .basket-product{
+            height: 200px;
+            background-color: #c4c4c4;
+            border-radius: 5px;
+            margin-top: 20px;
+            h3{
+                margin-top: 20px;
+            }
+            button{
+                width: 30px;
+                height: 30px;
+                margin:85px 5px;
+                border: none;
+                border-radius: 3px;
+            }
+            input{
+                width: 60px;
+                margin:85px 5px;
+                border: none;
+                border-radius: 3px;
+                text-align: center;
+            }
+            h2{
+                line-height: 200px;
+                text-align: right;
+                margin-right: 20px;
+            }
+        }
+        .busket_button{
+            margin-top: 20px;
+        }
+    }
+}
