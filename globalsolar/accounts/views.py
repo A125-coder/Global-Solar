@@ -1,6 +1,10 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from django.contrib import auth, messages
+from accounts.forms import EditProfileForm
 from django.contrib.auth.models import User
+from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 
 
 # def login(request):
@@ -34,34 +38,71 @@ def register(request):
             if User.objects.filter(username=username).exists():
                 messages.error(request, 'Користувач з таким ім"ям вже існує')
                 return redirect('register')
-            else: 
+            else:
                 if User.objects.filter(email=email).exists():
                     messages.error(request, 'Такие емейл вже існує')
                     return redirect('register')
                 else:
                     user = User.objects.create_user(
-                        username = username,
-                        password= password,
-                        email = email,
-                        first_name = first_name,
-                        last_name = last_name
+                        username=username,
+                        password=password,
+                        email=email,
+                        first_name=first_name,
+                        last_name=last_name
                     )
                     user.save()
-                    messages.success(request, 'Ви успішно зареєструвались! Залогіньтесь, будь ласка!')
+                    messages.success(
+                        request, 'Ви успішно зареєструвались! Залогіньтесь, будь ласка!')
                     return redirect('index')
 
         else:
             messages.error(request, "Паролі не співпадають!")
             return redirect('register')
 
-            
-
     return render(request, 'accounts/register.html')
-
-
 
 
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
     return redirect("index")
+
+
+@login_required
+def dashboard(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(
+                request, 'Your password was successfully updated!')
+            return redirect('dashboard')
+        else:
+            messages.error(request, 'Please correct the error below.')
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'accounts/dashboard.html', {
+        'form': form
+    })
+    # return render(request, 'accounts/dashboard.html')
+
+
+@login_required
+def edit(request):
+    if request.method == 'POST':
+        form = EditProfileForm(request.POST, instance=request.user)
+        if form.is_valid():
+            user = form.save()
+            messages.success(
+                request, 'Your data was successfully updated!')
+            return redirect('dashboard')
+        else:
+            messages.error(request, 'Please correct the error below.')
+    else:
+        form = EditProfileForm(instance=request.user)
+    return render(request, 'accounts/edit.html', {
+        'form': form
+    })
+
+    # return render(request, "accounts/edit.html")

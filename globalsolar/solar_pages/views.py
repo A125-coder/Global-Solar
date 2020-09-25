@@ -1,5 +1,5 @@
 
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from django.contrib import auth, messages
 from django.contrib.auth.models import User
 from catalog.models import Catalog
@@ -55,10 +55,6 @@ def contacts(request):
     return render(request, 'pages/contacts.html')
 
 
-def dashboard(request):
-    return render(request, 'pages/dashboard.html')
-
-
 def green_tarif(request):
     return render(request, 'pages/green_tarif.html')
 
@@ -73,8 +69,6 @@ def energy(request):
 
 def catalog(request):
     return render(request, 'pages/catalog.html')
-
-
 
 
 def ses(request):
@@ -110,7 +104,8 @@ def login(request):
             messages.success(request, 'Вітаємо! Ви залогінились')
             return redirect("dashboard")
         else:
-            messages.error(request, 'Невірний логін або пароль, спробуйте ще раз!')            
+            messages.error(
+                request, 'Невірний логін або пароль, спробуйте ще раз!')
             return redirect(index)
 
     else:
