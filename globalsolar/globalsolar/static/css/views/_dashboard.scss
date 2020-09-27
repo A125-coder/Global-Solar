@@ -74,6 +74,12 @@
       600
     );
   }
+  #id_old_password:hover,
+  #id_new_password1:hover,
+  #id_new_password2:hover {
+    border-bottom-color: $btn--bg-color-primary_1--hover;
+    box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4);
+  }
   label {
     display: inline-block;
     margin-bottom: 0;

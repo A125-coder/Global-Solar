@@ -8,29 +8,23 @@
       <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Історя замовлень</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Персональні дані</a>
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Персональні дані</a>
           <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Змінити пароль</a>
         </div>
       </div>
       <div class="col-8 ">
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"></div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            <form action="#" method="POST">
-              {% csrf_token %}
-              <ul>
-            <li>User first name: <p>{{user.first_name}}</p></li>
-            <li>User last name: <p>{{user.last_name}}</p></li>
-            <li>User email: <p>{{user.email}}</p></li>
-            <li>User username: <p>{{user.username}}</p></li>
-            </ul>
-            <a class="btn-danger user_change" href="{% url 'edit' %}">Edit user data</a>
-            <!-- <input type="submit" class="btn-danger change" value="Submit Change" /> -->
-          </form>
-        </div>
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <ul>
+              <li>User first name: <p>{{user.first_name}}</p></li>
+              <li>User last name: <p>{{user.last_name}}</p></li>
+              <li>User email: <p>{{user.email}}</p></li>
+              <li>User username: <p>{{user.username}}</p></li>
+              </ul>
+              <a class="btn-danger user_change" href="{% url 'edit' %}">Edit user data</a>
+          </div>
           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-          <form method="POST">
+          <form class="form__input" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn-danger change">Change Password</button>

@@ -36,6 +36,13 @@
       600
     );
   }
+  #id_username:hover,
+  #id_first_name:hover,
+  #id_last_name:hover,
+  #id_email:hover {
+    border-bottom-color: $btn--bg-color-primary_1--hover;
+    box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4);
+  }
   label {
     display: inline-block;
     margin-bottom: 0;
@@ -52,6 +59,8 @@
   padding: 10px 20px;
   margin: 30px 190px;
 }
-.helptext {
+.helptext,
+#id_password,
+label[for="id_password"] {
   display: none;
 }

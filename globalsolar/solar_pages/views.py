@@ -64,6 +64,21 @@ def register(request):
 
 
 def energy(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            # Теж ваша електронка - куди буде лист відправлятися
+            ['sup2a1nn@gmail.com'],
+            fail_silently=False
+        )
     return render(request, 'pages/energy.html')
 
 

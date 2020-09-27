@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
+from portfolio.models import Portfolio
 
 
 # def login(request):
@@ -85,7 +86,6 @@ def dashboard(request):
     return render(request, 'accounts/dashboard.html', {
         'form': form
     })
-    # return render(request, 'accounts/dashboard.html')
 
 
 @login_required
@@ -104,5 +104,3 @@ def edit(request):
     return render(request, 'accounts/edit.html', {
         'form': form
     })
-
-    # return render(request, "accounts/edit.html")
