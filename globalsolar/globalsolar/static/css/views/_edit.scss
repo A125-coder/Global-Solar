@@ -1,0 +1,66 @@
+.bg-dash {
+  margin: 30px 0;
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  hr {
+    background: linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    );
+    width: 70px;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  #id_username,
+  #id_first_name,
+  #id_last_name,
+  #id_email {
+    color: $font-main--color-primary_1;
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-width: 0 0 1px 0;
+    outline: 0 !important;
+    @include font(
+      18px,
+      $font-montserrat-semibold,
+      $font-main--color-primary_1,
+      600
+    );
+  }
+  #id_username:hover,
+  #id_first_name:hover,
+  #id_last_name:hover,
+  #id_email:hover {
+    border-bottom-color: $btn--bg-color-primary_1--hover;
+    box-shadow: 4px 8px 10px 0px rgba(251, 131, 85, 0.4);
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 0;
+    @include font(
+      18px,
+      $font-montserrat-medium,
+      $font-main--color-primary_1,
+      600
+    );
+  }
+  @include font(14px, $font-montserrat-reg, $font-main--color-primary_1, 600);
+}
+.user_change {
+  padding: 10px 20px;
+  margin: 30px 190px;
+}
+.helptext,
+#id_password,
+label[for="id_password"] {
+  display: none;
+}
