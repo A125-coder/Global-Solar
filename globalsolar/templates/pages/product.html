@@ -26,9 +26,13 @@
           <li><span>Гарантія:</span> {{ product.guarantee }}</li>
           <li><span>Виробництво:</span> {{ product.made }}</li>
         </ul>
-        <form action="{% url 'basket' product.id %}">
+        </form>
+        <form action="{% url 'basket:cart_add' product.id %}" method="POST">
+          {{ cart_product_form }}
+          {% csrf_token %}
           <button class="btn-danger">Замовити</button>
         </form>
+        
       </div>
     </div>
   </div>

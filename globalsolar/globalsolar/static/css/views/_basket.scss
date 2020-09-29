@@ -2,12 +2,23 @@
     background-color: $bg-main--color-primary_2;
     .bascket{
         padding-bottom: 20px;
+        .descr{
+            h3{
+                text-align: center;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+        }
         .basket-product{
             height: 200px;
             background-color: #c4c4c4;
             border-radius: 5px;
             margin-top: 20px;
-            h3{
+            .basket_photo{
+                height: 170px;
+                margin: 15px 0;
+            }
+            .basket_tile{
                 margin-top: 20px;
             }
             button{
@@ -17,21 +28,50 @@
                 border: none;
                 border-radius: 3px;
             }
+            #id_quantity{
+                margin: 65.4px 56px 0 56px;
+            }
             input{
-                width: 60px;
-                margin:85px 5px;
+                width: 80px;
+                height: 30px;
+                margin:10px 37.5px;
                 border: none;
                 border-radius: 3px;
                 text-align: center;
             }
-            h2{
+            .basket_price_p{
                 line-height: 200px;
                 text-align: right;
                 margin-right: 20px;
+
+            }
+            .basket_price_t{
+                text-align: right;
+                margin-right: 20px;
+                margin-top: 85px;
+            }
+            .btn_remove{
+                background-color: $bg-main--color-primary_3;
+                width: 100px;
+                margin: 40px 0 0px 50px;
             }
         }
         .busket_button{
             margin-top: 20px;
+            padding: 10px;
+            height: 70px;
+            border: 1px solid $btn--color-primary_1;
+            border-radius: 3px;
+            text-align: right;
+        }
+        .basket_price{
+            line-height: 50px;
+            text-align: right;
+            margin-right: 20px;
+            float: left;
+        }
+        .btn_of{
+            float: right;
         }
     }
 }

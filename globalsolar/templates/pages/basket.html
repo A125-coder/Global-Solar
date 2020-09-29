@@ -1,27 +1,47 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="container-fluid bg-basket">
     <div class="container bascket">
+        <div class="co-12 descr">
+            <div class="row">
+                <div class="col-2 offset-6"><h3>Кількість</h3></div>
+                <div class="col-2"><h3>Ціна за 1 товар</h3></div>
+                <div class="col-2"><h3>Ціна</h3></div>
+            </div>
+        </div>
+            {% for item in basket %}
+            {% with product=item.product %}
         <div class="col-12 basket-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="{{ product.photo_1.url }}" alt="">
+                    <img class="basket_photo" src="{{ product.photo_1.url }}" alt="">
                 </div>
-                <div class="col-6">
-                    <h3>{{ product.title }}</h3>
+                <div class="col-4">
+                    <h2 class="basket_tile">{{ product.title }}</h2>
                     <p>{{ product.description }}</p>
                 </div>
                 <div class="col-2">
-                    <div class="row">
-                        <button>-</button>
-                        <input type="number" name="" id="">
-                        <button>+</button>
-                 </div>
+                        <form action="{% url 'basket:cart_add' product.id %}" method="post">
+                            {{ item.update_quantity_form.quantity }}
+                            {{ item.update_quantity_form.update }}
+                            <input type="submit" class="btn-danger" value="Обновить">
+                            {% csrf_token %}
+                    </form>
                 </div>
-                <div class="col-2"><h2>{{ product.price }}$</h2></div>
-            </div>
-        </div>
-        <div class="col-3 offset-9 busket_button">
-            <button class="btn-danger">оформити замовлення</button>
+                <div class="col-2">
+                    <h2 class="basket_price_p">${{ item.price }}</h2>
+                </div>
+                <div class="col-2">
+                    <h2 class="basket_price_t">{{ item.total_price }}$</h2>
+                    <form action="{% url 'basket:cart_remove' product.id%}">
+                        <button class="btn-danger btn_remove">Видалити</button>
+                    </form></div>
+            </div></div>
+            {% endwith %}
+        {% endfor %}
+        
+        <div class="col-4 offset-8 busket_button">
+                <h2 class="basket_price">{{ basket.get_total_price }}$</h2>
+                <button class="btn-danger btn_of">оформити замовлення</button>
         </div>
     </div>
 </div>
