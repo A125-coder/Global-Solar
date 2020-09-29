@@ -76,4 +76,125 @@
     }
     @include font(16px, $font-opensans-reg, $font-main--color-primary_1, 400);
   }
+
+  @media only screen and (min-device-width : 1200px) and (max-device-width : 1920px) 
+  {.hamburger{
+    visibility: hidden;
+
+  } }
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1200px) 
+  { 
+    .pages {
+      visibility: hidden;
+      // a {
+      //   @include font(10px, $font-opensans-reg, $font-main--color-primary_3, 400);
+      // }
+      // a:hover {
+      //   @include font(10px, $font-opensans-reg, $font-span--color-primary, 400);
+      // }
+
+   }}   
+
+//    .burger-wrapper {
+//     display: inline-flex;
+//     padding: 0;
+//     position: relative;
+//     top: 4px;
+//     width: 30px;
+
+//     // .btn-burger{
+
+//     // }
+
+//     span{
+//       height: 4px;
+//       border-radius: 30px;
+//       margin-bottom: 6px;
+//       display: inline-flex;
+//       width: 100%;
+//       color: #fff;
+//     }
+// }
+
+.hamburger {
+	display: inline-flex;
+  align-items: flex-start;
+	cursor: pointer;
+	top: 1.5rem;
+  position: relative;
+}
+
+// .hamburger__text {
+// 	letter-spacing: .1rem;
+// 	margin-right: 1rem;
+// 	content: 'Menu';
+// 	font-size: 1rem;
+// 	color: white;
+// 	text-transform: uppercase;
+//   font-family: "Avenir", sans-serif;
+// 	-webkit-user-select: none;
+//   flex: 1;
+//   align-self: center;
+// }
+
+.hamburger__icon {
+	width: 28px;
+	height: 40px;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+  flex: 1;
+  align-self: center;
+  
+	span {
+		display: flex;
+		position: absolute;
+		height: 3px;
+		width: 28px;
+		background: white;
+		border-radius: 0px;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+		&:nth-child(1) {
+			top: 0;
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			top: 8px
+		}
+		&:nth-child(4) {
+			top: 16px;
+		}
+	}
+}
+
+.hamburger__icon {
+	&.open {
+		span {
+			background: white;
+			&:nth-child(1) {
+				top: 16px;
+				width: 0%;
+				left: 50%;
+			}
+			&:nth-child(2) {
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(4) {
+				top: 16px;
+				width: 0%;
+				left: 50%;
+			}
+		}
+	} 
+}
+
 }

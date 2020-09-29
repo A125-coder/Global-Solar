@@ -78,3 +78,15 @@ for (let i = 0; i < 4; i++) {
   })
 }
 
+// burger
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var elements = {
+    burger: document.getElementsByClassName("hamburger")[0],
+    icon: document.getElementsByClassName("hamburger__icon")[0]
+  };
+
+  elements.burger.onclick = function() {
+    elements.icon.classList.toggle("open");
+  };
+});
