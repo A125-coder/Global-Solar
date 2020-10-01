@@ -15,10 +15,10 @@
         </div>
 
 
-        <div class="col-xs-3 col-sm-3 col-xl-2 col-md-2 logo">
+        <div class="col-2 col-sm-3 col-xl-2 col-md-2 logo">
           <a href="{% url 'index' %}">
             <img src="{{STATIC_PREFIX}}img/logo.png" alt="logo" />
-            <span
+            <span class="logoname"
               >Global <br />
               Solar</span
             >
@@ -76,7 +76,7 @@
         </div>
 
        
-        <div class="col-xs-6 col-sm-8 col-md-5 col-xl-3 reg top--header_butons row ">
+        <div class="col-10  col-sm-8 col-md-5 col-xl-3 reg top--header_butons row ">
           {% if user.is_authenticated %}
           <div {%if 'dashboard' in request.path %} class="nav-item active merg" {% else %} class="nav-item " 
           {% endif %}>
