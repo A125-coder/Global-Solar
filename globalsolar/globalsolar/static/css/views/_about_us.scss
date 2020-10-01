@@ -121,16 +121,7 @@
       ul {
         margin-left: 20px;
         li {
-          @include font(
-            14px,
-            $font-montserrat-reg,
-            $font-main--color-primary_2,
-            normal
-          );
-          text-align: justify;
-          margin-bottom: 40px;
-          padding-left: 10px;
-          list-style-image: url(../img/img/li.png);
+          
         }
       }
     }

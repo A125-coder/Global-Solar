@@ -1,0 +1,78 @@
+.create_bg{
+    background-color: $bg-main--color-primary_2;
+    .create{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        .user_form{
+            .order-form{
+                label{
+                    display: block;
+                    @include font(15px, $font-montserrat-reg, $font-h1--color-primary, 400);
+                }
+                input{
+                    background-color: $default--color__3;
+                    border: $default--color__2 solid 1px;
+                    width: 70%;
+                    @include font(15px, $font-montserrat-reg, $font-h1--color-primary, 400);
+                    padding: 15px;
+                    height: 35px;
+                    border-radius: 30px;
+                }
+                input:active {
+                    background-color: $default--color__3;
+                    border: $btn--color-primary_1 solid 1px;
+                    width: 70%;
+                    @include font(15px, $font-montserrat-reg, $font-h1--color-primary, 400);
+                    padding: 15px;
+                    height: 35px;
+                    border-radius: 30px;
+                  }
+                  
+                input:hover {
+                    background-color: $default--color__3;
+                    border: $btn--color-primary_2--hover solid 1px;
+                    width: 70%;
+                    @include font(15px, $font-montserrat-reg, $font-h1--color-primary, 400);
+                    padding: 15px;
+                    height: 35px;
+                    border-radius: 30px;
+                  }
+                .order_btn{
+                    margin: 0 auto;
+                }
+            }
+        }
+        .order-info{
+            background-color: #c4c4c4;
+            padding: 30px 20px;
+            .order-info_h2{
+                @include font(25px, $font-montserrat-reg, $font-h1--color-primary, 600);
+                margin: 0 0 20px 0;
+            }
+            ul{
+                li{
+                    margin-left: 50px;
+                    @include font(
+                        14px,
+                        $font-montserrat-reg,
+                        $font-h1--color-primary,
+                        normal
+                    );
+                    text-align: justify;
+                    padding-left: 10px;
+                    list-style-image: url(../img/img/li.png);
+                    span{
+                        float: right;
+                        margin-right: 50px;
+                        @include font(14px, $font-montserrat-reg, $font-h1--color-primary, 600);
+                    }
+                }
+            }
+            h3{
+                @include font(18px, $font-montserrat-reg, $font-h1--color-primary, 600);
+                text-align: right;
+                margin-top: 20px;
+            }
+        }
+    }
+}
