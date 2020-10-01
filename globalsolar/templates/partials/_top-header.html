@@ -27,7 +27,7 @@
         
 
         </div>
-        <div class="d-none d-md-flex col-md-4 col-xl-6 pages">
+        <div class="d-none d-md-flex col-md-6 col-xl-6 pages">
           {% with url_name=request.resolver_match.url_name %}
           <div>
             <a
@@ -76,7 +76,7 @@
         </div>
 
        
-        <div class="col-10  col-sm-8 col-md-5 col-xl-3 reg top--header_butons row ">
+        <div class="col-10  col-sm-8 offset-col-5 col-md-4 offset-col-1 col-xl-3 reg top--header_butons row ">
           {% if user.is_authenticated %}
           <div {%if 'dashboard' in request.path %} class="nav-item active merg" {% else %} class="nav-item " 
           {% endif %}>
