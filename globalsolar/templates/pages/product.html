@@ -7,12 +7,20 @@
     </div>
     <div class="row">
       <div class="col-6 product_img">
-        <img class="product_img_0" src="{{ product.photo_1.url }}" alt="" />
+        <img class="product_img_0" src="{{ product.photo_0.url }}" alt="" />
         <div class="row">
-          <img class="product_img_1 product_img_" src="{{ product.photo_0.url }}" alt="" />
-          <img class="product_img_2 product_img_" src="{{ product.photo_1.url }}" alt="" />
-          <img class="product_img_3 product_img_" src="{{ product.photo_2.url }}" alt="" />
-          <img class="product_img_4 product_img_" src="{{ product.photo_3.url }}" alt="" />
+            {% if product.photo_0 %}
+            <img class="product_img_1 product_img_" src="{{ product.photo_0.url }}" alt="" />
+            {% endif %}
+            {% if product.photo_1 %}
+            <img class="product_img_2 product_img_" src="{{ product.photo_1.url }}" alt="" />
+            {% endif %}
+            {% if product.photo_1 %}
+            <img class="product_img_3 product_img_" src="{{ product.photo_2.url }}" alt="" />
+            {% endif %}
+            {% if product.photo_1 %}
+            <img class="product_img_4 product_img_" src="{{ product.photo_3.url }}" alt="" />
+            {% endif %}
         </div>
       </div>
       <div class="col-6 product_info">

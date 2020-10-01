@@ -31,7 +31,7 @@ def product(request, product_id):
     return render(request, "pages/product.html", context)
 
 def SolarPanels(request):
-    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='Solar Panels Monocrystalline') | Q(catalog_type='Solar Panels Polycrystalline'))
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='monocrystalline') | Q(catalog_type='polycrystalline') | Q(catalog_type='SolarPanels'))
     
     paginator = Paginator(SolarPanels, 9)
     page_number = request.GET.get('page')
@@ -42,7 +42,7 @@ def SolarPanels(request):
     return render(request, "pages/catalog/catalogPage.html", context)
 
 def monocrystalline(request):
-    SolarPanels = Catalog.objects.all().filter(catalog_type='Solar Panels Monocrystalline')
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='monocrystalline') | Q(catalog_type='SolarPanels'))
     
     paginator = Paginator(SolarPanels, 9)
     page_number = request.GET.get('page')
@@ -53,7 +53,7 @@ def monocrystalline(request):
     return render(request, "pages/catalog/catalogMono.html", context)
     
 def polycrystalline(request):
-    SolarPanels = Catalog.objects.all().filter(catalog_type='Solar Panels Polycrystalline')
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='polycrystalline') | Q(catalog_type='SolarPanels'))
     
     paginator = Paginator(SolarPanels, 9)
     page_number = request.GET.get('page')
@@ -62,6 +62,94 @@ def polycrystalline(request):
         "SolarPanels": page,
     }
     return render(request, "pages/catalog/catalogPoly.html", context)
+
+def ReadySolutions(request):
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='Autonomous') | Q(catalog_type='OwnConsumption') | Q(catalog_type='WaterHeating'))
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/ReadySolutions.html", context)
+
+def Autonomous(request):
+    SolarPanels = Catalog.objects.all().filter(catalog_type='Autonomous')
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/Autonomous.html", context)
+
+def OwnConsumption(request):
+    SolarPanels = Catalog.objects.all().filter(catalog_type='OwnConsumption')
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/OwnConsumption.html", context)
+
+def WaterHeating(request):
+    SolarPanels = Catalog.objects.all().filter(catalog_type='WaterHeating')
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/WaterHeating.html", context)
+
+def SolarInverters(request):
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='AutonomousInverters') | Q(catalog_type='HybridInverters') | Q(catalog_type='NetworkInverters'))
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/SolarInverters.html", context)
+
+def AutonomousInverters(request):
+    SolarPanels = Catalog.objects.all().filter(catalog_type='AutonomousInverters')
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/AutonomousInverters.html", context)
+
+def HybridInverters(request):
+    SolarPanels = Catalog.objects.all().filter(Q(catalog_type='AutonomousInverters') | Q(catalog_type='HybridInverters'))
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/HybridInverters.html", context)
+
+def NetworkInverters(request):
+    SolarPanels = Catalog.objects.all().filter(catalog_type='NetworkInverters')
+    
+    paginator = Paginator(SolarPanels, 9)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    context = {
+        "SolarPanels": page,
+    }
+    return render(request, "pages/catalog/NetworkInverters.html", context)
 
 
 
