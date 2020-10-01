@@ -474,9 +474,25 @@ main {
     }
     @media only screen and (min-device-width : 320px) and (max-device-width : 575px) 
     { 
+      
+
+      .info_main {
+        padding: 0px 0 20px 0;
+        .info_main_p {
+          margin-top: 0;
+        }}
+      .bg_need_main {
+        .need_main {
+          padding: 40px 0;}
+          .need_main_text {
+            h2{            
+              font-size: 18px;
+            }
+                    }        
+        }
 
       .bg-price {
-        padding: 150px 0 100px 0;
+        padding: 40px 0 40px 0;
         background-color: $bg-main--color-primary_3;
         .bg-price_decor_1 {
           position: absolute;
@@ -494,13 +510,11 @@ main {
         }
         .price {
           .price_top {
-            h2,
+            h2{font-size: 18px;}
             p {
               text-align: center;
             }
-            h2 {
-              font-size: 32px;
-            }
+            
             hr {
               width: 75px;
               height: 3px;
@@ -527,19 +541,21 @@ main {
                 line-height: 18px;
                 text-align: center;
                 position: relative;
-                top: -40px;
+                top: -50px;
                 font-size: 21px;
-                left: 10px;
+                left: 50px;
               }
             }
             .price_middle_text {
-              margin-top: 15px;
-              border: 2px solid $btn--color-primary_1;
-              border-width: 0 0 0 2px;
-              height: 60px;
+              visibility: hidden;
+
+              // margin-top: 15px;
+              // border: 2px solid $btn--color-primary_1;
+              // border-width: 0 0 0 2px;
+              // height: 60px;
               p {
-                text-align: center;
-                line-height: 14px;
+                visibility: hidden;
+
               }
             }
           }}}
@@ -547,16 +563,36 @@ main {
       .bg_form {
         background-image: url(../img/img/bg_form_2.png);
         height: 710px;
+        .form {
+          padding-top: 10px;}
       }
       .bg-advantages{
         .advantages{
+          padding: 40px 0 40px 0;
+          h2{
+            margin-bottom: 20px;
+          }
           h3{
-            font-size: 18px;
+            font-size: 16px;
             height: 40px;
             line-height: 15px;
             font-weight: 600;
           }
         }}
+
+      .bg_benefits_main {
+        background-color: $bg-main--color-primary_3;
+        .benefits_main {
+          padding: 40px 0 30px 0;
+          h2{
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      p{
+        line-height: 18px;
+      }}
+        }
+
       .bg_profit_main{
         .profit_main {
           position: relative;
