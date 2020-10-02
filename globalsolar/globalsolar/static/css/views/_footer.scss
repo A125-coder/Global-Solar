@@ -20,6 +20,7 @@ footer {
     }
     .logo {
       position: relative;
+      
       img {
         position: absolute;
         top: 22px;
@@ -49,7 +50,7 @@ footer {
       }
     }
     .icons {
-      margin-top: 22px;
+      margin-top: 30px;
       display: flex;
       a {
         @include font(12px, $font-opensans-reg, $default--color__3, 500);
@@ -69,4 +70,30 @@ footer {
     @include font(12px, $font-montserrat-reg, $default--color__4, 400);
     text-align: center;
   }
+
+
+  // @media only screen and (min-device-width : 320px) and (max-device-width : 768px) 
+  // { 
+  // }  
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 1200px) 
+  { 
+    .pages {
+      visibility: hidden;
+        }}   
+
+    .icons {
+      margin-top: 0px;
+      display: flex;
+      a {
+        @include font(12px, $font-opensans-reg, $default--color__3, 500);
+        display: flex;
+        justify-content: space-between;
+        i,
+        p {
+          padding-left: 3px;
+        }
+      }
+    }
+
 }

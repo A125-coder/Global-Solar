@@ -356,4 +356,487 @@ main {
     }
     @include font(16px, $font-opensans-reg, $font-main--color-primary_1, 400);
   }
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1200px) 
+  { 
+
+    .bg-advantages {
+      background-color: $default--color__3;
+      .bg-advantages_decor {
+        position: absolute;
+        top: 2150px;
+        width: 22%;
+        right: -150px;
+        z-index: 0;
+      }
+      .advantages {
+        padding: 40px 0 40px 0;
+        .advantages_row_one {
+          margin-bottom: 50px;
+        }
+        h2 {
+          text-align: center;
+          margin-bottom: 60px;
+          font-size: 21px;
+        }
+      h3{
+        height: 28px;
+       line-height: 14px;
+      }
+      }}
+
+    .bg_need_main {
+      background-image: url(../img/img/bg_need_2.png);
+      .need_main {
+        padding: 30px 0;}}
+    .bg_benefits_main {
+      background-color: $bg-main--color-primary_3;
+      .benefits_main {
+        padding: 40px 0 30px 0;}
+      img{width: 100%;}
+    h2{
+      font-size: 21px;
+    }}
+
+    .bg-price {
+      padding: 60px 0 60px 0;
+      background-color: $bg-main--color-primary_3;
+      .bg-price_decor_1 {
+        position: absolute;
+        top: 3410px;
+        width: 22%;
+        left: 50px;
+        z-index: 0;
+      }
+      .bg-price_decor_2 {
+        position: absolute;
+        top: 3800px;
+        width: 15%;
+        right: 0px;
+        z-index: 0;
+      }
+      .price {
+        .price_top {
+          h2,
+          p {
+            text-align: center;
+          }
+          h2 {
+            font-size: 24px;
+          }
+          hr {
+            width: 75px;
+            height: 3px;
+            border: none;
+            margin: 30px auto;
+            background-color: $btn--color-primary_1;
+          }
+        }
+        .price_middle {
+          height: 100px;
+          border: 7px solid $default--color__1;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          .price_middle_discount {
+            img {
+              position: relative;
+              top: 7.5px;
+              left: -40px;
+              z-index: 1;
+              background-color: $bg-main--color-primary_3;
+              height: 70px;
+            }
+            h4 {
+              font-size: 18px;
+              position: relative;
+              top: -66px;
+              line-height: -35px;
+              left: 40px;
+              text-align: center;
+            }
+          }
+          .price_middle_text {
+            margin-top: 15px;
+            border: 2px solid $btn--color-primary_1;
+            border-width: 0 0 0 2px;
+            height: 60px;
+            p {
+              text-align: center;
+              line-height: 27px;
+            }
+          }
+        }
+        .price_bottom {
+          .price_black {
+            border-radius: 5px;
+            box-shadow: 0 10px 7px 5px rgba(24, 24, 25, 0.3);
+            height: 540px;
+            .price_black_top {
+              height: 85px;
+              background-color: $default--color__2;
+              border-radius: 5px 5px 0 0;
+              h2 {
+                text-align: center;
+                color: $default--color__3;
+                line-height: 85px;
+              }
+            }
+            .price_price {
+              color: $default--color__2;
+              font-size: 36px;
+              margin: 30px 0 0 0;
+              text-align: center;
+            }
+            .price_hr_top {
+              width: 100px;
+              height: 3px;
+              border: none;
+              margin: 5px auto;
+              background-color: $default--color__2;
+            }
+            .price_text {
+              margin-left: 30px;
+              margin-bottom: 30px;
+            }
+            .price_hr_bottom {
+              height: 1px;
+              border: none;
+              margin: 5px auto;
+              background-color: #d9d9d9;
+            }
+            button {
+              display: block;
+              margin: 20px auto 0 auto;
+              width: 150px;
+              height: 50px;
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          .price_orange {
+            border-radius: 5px;
+            box-shadow: 0 10px 7px 5px rgba(245, 88, 75, 0.3);
+            height: 540px;
+            .price_black_top {
+              height: 85px;
+              background: $gradient_1;
+              border-radius: 5px 5px 0 0;
+              h2 {
+                text-align: center;
+                color: $default--color__3;
+                line-height: 85px;
+              }
+            }
+            .price_price {
+              color: $default--color__2;
+              font-size: 36px;
+              margin: 30px 0 0 0;
+              text-align: center;
+            }
+            .price_hr_top {
+              width: 100px;
+              height: 3px;
+              border: none;
+              margin: 5px auto;
+              background-color: $default--color__2;
+            }
+            .price_text {
+              margin-left: 30px;
+              margin-bottom: 30px;
+            }
+            .price_hr_bottom {
+              height: 1px;
+              border: none;
+              margin: 5px auto;
+              background-color: #d9d9d9;
+            }
+            button {
+              display: block;
+              margin: 20px auto 0 auto;
+  
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+        }}}
+    .bg_profit_main{
+
+    .evidence_need_main {
+      img {
+          display: block;
+          margin: 0 auto 20px auto;
+        }
+      p {
+          text-align: center;
+          width: 100%;
+          color: $default--color__3;
+        }
+      }
+    .profit_main {
+      position: relative;
+      top: -180px;
+      padding-top: 32px;
+      height: 245px;
+      background-color: $bg-main--color-primary_1;
+      border-radius: 3px;
+      box-shadow: 0 20px 7px -1px rgba(241, 241, 241, 1);
+      margin-bottom: -150px;
+      h2 {
+        text-align: center;
+        @include font(21px, $font-montserrat-medium, none, 500);
+
+      }
+      
+      p {
+        text-align: center;
+        line-height: 18px;
+      }
+      .main_prof {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        img {
+          float: left;
+        }
+        div {
+          width: 30%;
+        }
+        h3 {
+          margin-top: 10px;
+          line-height: 14px;
+          @include font(12px, $font-montserrat-reg, none, 400);
+          // word-break: break-all;
+          overflow-wrap: normal;
+
+        }
+      }}}
+    
+   }
+
+   @media only screen and (min-device-width : 575px) and (max-device-width : 768px) 
+  { 
+    .bg_form {
+    background-image: url(../img/img/bg_form_2.png);
+    height: 510px;
+  }
+    .bg-advantages{
+    .advantages{
+      h3{
+        font-size: 18px;
+        height: 40px;
+        line-height: 15px;
+        font-weight: 600;
+      }
+    }}
+    .bg_profit_main{
+      
+      .profit_main {
+        position: relative;
+        top: -175px;
+        padding-top: 29px;
+        height: 280px;
+        background-color: $bg-main--color-primary_1;
+        border-radius: 3px;
+        box-shadow: 0 20px 7px -1px rgba(241, 241, 241, 1);
+        margin-bottom: -150px;
+        h2 {
+          text-align: center;
+          @include font(18px, $font-montserrat-medium, none, 500);
+          line-height: 21px;
+  
+        }
+        p {
+          text-align: center;
+          line-height: 18px;
+        }
+        .white-background{
+          font-size: 12px;
+        }
+        .main_prof {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-around;
+          img {
+            float: none;
+          }
+          div {
+            width: 30%;
+          }
+          h3 {
+            margin-top: -10px;
+            line-height: 14px;
+            @include font(12px, $font-montserrat-reg, none, 400);
+            // word-break: break-all;
+            overflow-wrap: normal;
+  
+          }
+        }}}
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 575px) 
+    { 
+      
+
+      .info_main {
+        padding: 0px 0 20px 0;
+        .info_main_p {
+          margin-top: 0;
+        }}
+      .bg_need_main {
+        .need_main {
+          padding: 40px 0;}
+          .need_main_text {
+            h2{            
+              font-size: 18px;
+            }
+                    }        
+        }
+
+      .bg-price {
+        padding: 40px 0 40px 0;
+        background-color: $bg-main--color-primary_3;
+        .bg-price_decor_1 {
+          position: absolute;
+          top: 3410px;
+          width: 22%;
+          left: 50px;
+          z-index: 0;
+        }
+        .bg-price_decor_2 {
+          position: absolute;
+          top: 3800px;
+          width: 15%;
+          right: 0px;
+          z-index: 0;
+        }
+        .price {
+          .price_top {
+            h2{font-size: 18px;}
+            p {
+              text-align: center;
+            }
+            
+            hr {
+              width: 75px;
+              height: 3px;
+              border: none;
+              margin: 30px auto;
+              background-color: $btn--color-primary_1;
+            }
+          }
+          .price_middle {
+            height: 100px;
+            border: 7px solid $default--color__1;
+            margin-top: 40px;
+            margin-bottom: 62px;
+            .price_middle_discount {
+              img {
+                position: relative;
+                top: 7.5px;
+                left: -40px;
+                z-index: 1;
+                background-color: $bg-main--color-primary_3;
+                height: 70px;
+              }
+              h4 {
+                line-height: 18px;
+                text-align: center;
+                position: relative;
+                top: -50px;
+                font-size: 21px;
+                left: 50px;
+              }
+            }
+            .price_middle_text {
+              visibility: hidden;
+
+              // margin-top: 15px;
+              // border: 2px solid $btn--color-primary_1;
+              // border-width: 0 0 0 2px;
+              // height: 60px;
+              p {
+                visibility: hidden;
+
+              }
+            }
+          }}}
+
+      .bg_form {
+        background-image: url(../img/img/bg_form_2.png);
+        height: 710px;
+        .form {
+          padding-top: 10px;}
+      }
+      .bg-advantages{
+        .advantages{
+          padding: 40px 0 40px 0;
+          h2{
+            margin-bottom: 20px;
+          }
+          h3{
+            font-size: 16px;
+            height: 40px;
+            line-height: 15px;
+            font-weight: 600;
+          }
+        }}
+
+      .bg_benefits_main {
+        background-color: $bg-main--color-primary_3;
+        .benefits_main {
+          padding: 40px 0 30px 0;
+          h2{
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      p{
+        line-height: 18px;
+      }}
+        }
+
+      .bg_profit_main{
+        .profit_main {
+          position: relative;
+          top: -205px;
+          padding-top: 30px;
+          height: 340px;
+          background-color: $bg-main--color-primary_1;
+          border-radius: 3px;
+          box-shadow: 0 20px 7px -1px rgba(241, 241, 241, 1);
+          margin-bottom: -190px;
+          padding-left: 0px;
+          padding-right: 0px;
+          
+          h2 {
+            text-align: center;
+            @include font(16px, $font-montserrat-medium, none, 500);
+            line-height: 18px;
+    
+          }
+          p {
+            text-align: center;
+            line-height: 16px;
+          }
+          .white-background{
+            font-size: 11px;
+          }
+          .main_prof {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            img {
+              float: none;
+            }
+            div {
+              width: 30%;
+            }
+            h3 {
+              margin-top: -10px;
+              line-height: 14px;
+              @include font(11px, $font-montserrat-reg, none, 400);
+              // word-break: break-all;
+              overflow-wrap: normal;
+    
+            }
+          }}}
+      }
 }

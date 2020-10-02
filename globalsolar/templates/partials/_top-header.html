@@ -3,16 +3,86 @@
   <div class="container-fluid top--header__bg">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-md-2 logo">
+
+        <div class="hamburger">
+            <!-- <p class="hamburger__text">Menu</p> -->
+            <div class="hamburger__icon" data-toggle="modal"
+            data-target="#exampleModalMeny">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalMeny"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button
+    type="button"
+    class="close"
+    data-dismiss="modal"
+    aria-label="Close"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <ul class="sideNav">
+    <li class="burger-header"></li>
+    <li>   <a
+      class="{% if url_name == 'index' %} active {% endif %}"
+      href="{% url 'index' %}"
+      ><i class="fas fa-home"></i>ГОЛОВНА</a
+    ></li>
+    <li><a
+      class="{% if url_name == 'prices' %} active {% endif %}"
+      href="{% url 'prices' %}"
+      ><i class="fas fa-money-check-alt"></i>ПОСЛУГИ І ЦІНИ</a
+    ></li>
+    <li><a
+      class="{% if url_name == 'faq' %} active {% endif %}"
+      href="{% url 'faq' %}"
+      ><i class="fas fa-question-circle"></i>FAQ</a
+    ></li>
+    <li><a
+      class="{% if url_name == 'contacts' %} active {% endif %}"
+      href="{% url 'contacts' %}"
+      ><i class="fas fa-address-card"></i>КОНТАКТИ</a
+    ></li>
+    <li><a
+      class="{% if url_name == 'portfolio' %} active {% endif %}"
+      href="{% url 'portfolio' %}"
+      ><i class="fas fa-briefcase"></i>НАШІ РОБОТИ</a
+    ></li>
+    <li><a
+      class="{% if url_name == 'catalog' %} active {% endif %}"
+      href="{% url 'catalog' %}"
+      ><i class="fas fa-list-alt"></i>КАТАЛОГ</a
+    ></li>
+
+  </ul>
+</div></div></div>
+
+        <div class="col-2 col-sm-3 col-xl-2 col-md-2 logo">
           <a href="{% url 'index' %}">
             <img src="{{STATIC_PREFIX}}img/logo.png" alt="logo" />
-            <span
+            <span class="logoname"
               >Global <br />
               Solar</span
             >
           </a>
+        
+        
+
         </div>
-        <div class="col-xl-7 col-md-7 pages">
+        <div class="d-none d-md-flex col-md-6 col-xl-6 pages">
           {% with url_name=request.resolver_match.url_name %}
           <div>
             <a
@@ -60,7 +130,8 @@
           {% endwith %}
         </div>
 
-        <div class="col-xl-3 col-md-3 reg top--header_butons row ">
+       
+        <div class="col-10  col-sm-8 offset-col-5 col-md-4 offset-col-1 col-xl-3 reg top--header_butons row ">
           {% if user.is_authenticated %}
           <div {%if 'dashboard' in request.path %} class="nav-item active merg" {% else %} class="nav-item " 
           {% endif %}>
