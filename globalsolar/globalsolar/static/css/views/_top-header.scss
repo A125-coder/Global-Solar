@@ -7,6 +7,7 @@
     background-color: $bg-header--color-primary_1;
     width: 100%;
     height: 90px;
+    
   }
   span {
     @include font(14px, $font-montserrat-reg, $font-span--color-primary, bold);
@@ -64,6 +65,30 @@
  
    .modal-content {
     text-align: center;
+    ul{
+      list-style-type: none;
+      margin: 20px 0;
+      text-align: left;
+      padding-left: 90px;
+      li{
+        margin: 10px 0;
+        i{
+          margin-right: 15px;
+        }
+        a{
+          @include font(16px, $font-opensans-reg, $font-main--color-primary_1, 400);
+
+        }
+      }
+      li:hover{
+        margin: 10px 0;
+        background-color: $default--color__1;
+      }
+      li:active{
+        margin: 10px 0;
+        background-color: $default--color__1;
+      }
+    }  
     .input {
       color: $font-main--color-primary_1;
       width: 250px;
@@ -77,6 +102,8 @@
     @include font(16px, $font-opensans-reg, $font-main--color-primary_1, 400);
   }
 
+ 
+
   @media only screen and (min-device-width : 1200px) and (max-device-width : 1920px) 
   {.hamburger{
     visibility: hidden;
@@ -87,7 +114,18 @@
   { 
     .pages {
       visibility: hidden;
-        }}   
+        }
+    .modal-content {
+      text-align: center;
+      width: 700px;
+      ul{
+      list-style-type: none;
+      margin: 20px 0;
+      text-align: left;
+      padding-left: 50px;}} 
+      
+      } 
+
 
    @media only screen and (min-device-width : 320px) and (max-device-width : 576px) 
   { 
@@ -101,6 +139,15 @@
   .reg {
     padding-left: 30px;
   }
+
+  .modal-content {
+    text-align: center;
+    width: 290px;
+    ul{
+      list-style-type: none;
+      margin: 20px 0;
+      text-align: left;
+      padding-left: 30px;}}
 
   }   
 
