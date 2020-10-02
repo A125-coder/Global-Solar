@@ -17,7 +17,6 @@
                 </div>
                 <div class="col-4">
                     <h2 class="basket_tile">{{ product.title }}</h2>
-                    <p>{{ product.description }}</p>
                 </div>
                 <div class="col-2">
                         <form action="{% url 'basket:cart_add' product.id %}" method="post">
