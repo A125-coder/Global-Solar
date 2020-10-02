@@ -85,6 +85,7 @@
 }
 #container {
   background-image: url(../img/mainfoto.png);
+  background-repeat: no-repeat;
 }
 #user-tools {
   font-family: Montserrat-Medium;
@@ -104,7 +105,7 @@
 }
 .module a {
   font-family: Montserrat-Medium;
-  color: #ff9f5c;
+  color: #212121;
 }
 div.breadcrumbs {
   background-color: #4c4c4c;

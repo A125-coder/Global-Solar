@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, redirect
 from django.contrib import auth, messages
 from django.contrib.auth.models import User
@@ -20,8 +19,7 @@ def index(request):
             "Я хочу станцію на:" + ", " + volts +
             ", " + name + ", " + email + " " + phone,
             'master@gmail.com',
-            # Теж ваша електронка - куди буде лист відправлятися
-            ['sup2a1nn@gmail.com'],
+            ['sup2a1nn@gmail.com'],# Теж ваша електронка - куди буде лист відправлятися
             fail_silently=False
         )
     return render(request, 'pages/home.html')
@@ -44,8 +42,7 @@ def prices(request):
             "Я хочу станцію на:" + ", " + volts +
             ", " + name + ", " + email + " " + phone,
             'master@gmail.com',
-            # Теж ваша електронка - куди буде лист відправлятися
-            ['sup2a1nn@gmail.com'],
+            ['sup2a1nn@gmail.com'],# Теж ваша електронка - куди буде лист відправлятися
             fail_silently=False
         )
     return render(request, 'pages/prices.html')
@@ -56,6 +53,20 @@ def contacts(request):
 
 
 def green_tarif(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        phone = request.POST["phone"]
+        volts = request.POST["volts"]
+
+        send_mail(
+            "Прорахунок вартості пропозиції",
+            "Я хочу станцію на:" + ", " + volts +
+            ", " + name + ", " + email + " " + phone,
+            'master@gmail.com',
+            ['sup2a1nn@gmail.com'],# Теж ваша електронка - куди буде лист відправлятися
+            fail_silently=False
+        )
     return render(request, 'pages/green_tarif.html')
 
 
@@ -75,8 +86,7 @@ def energy(request):
             "Я хочу станцію на:" + ", " + volts +
             ", " + name + ", " + email + " " + phone,
             'master@gmail.com',
-            # Теж ваша електронка - куди буде лист відправлятися
-            ['sup2a1nn@gmail.com'],
+            ['sup2a1nn@gmail.com'],# Теж ваша електронка - куди буде лист відправлятися
             fail_silently=False
         )
     return render(request, 'pages/energy.html')
@@ -100,8 +110,7 @@ def faq(request):
             "Моє запитання",
             question + ", " + name + ", " + email,
             'master@gmail.com',
-            # Теж ваша електронка - куди буде лист відправлятися
-            ['sup2a1nn@gmail.com'],
+            ['sup2a1nn@gmail.com'],# Теж ваша електронка - куди буде лист відправлятися
             fail_silently=False
         )
     return render(request, 'pages/faq.html')
