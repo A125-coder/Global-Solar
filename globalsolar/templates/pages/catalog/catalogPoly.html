@@ -8,28 +8,25 @@
             <h2>категорії</h2>
           </div>
           <ul>
-            <h3><a href="#">Готові рішення</a></h3>
-            <hr />
-            <li><a href="#">Автономні</a></li>
-            <li><a href="#">Власне споживання</a></li>
-            <li><a href="#">Вуличне освітлення</a></li>
-            <li><a href="#">Зелений тариф</a></li>
-            <li><a href="#">Карпорт</a></li>
-            <li><a href="#">Підігрів води</a></li>
-          </ul>
-          <ul>
-            <h3><a href="#">Сонячні інвертори</a></h3>
-            <hr />
-            <li><a href="#">Автономні</a></li>
-            <li><a href="#">Гібридні (з АКБ)</a></li>
-            <li><a href="#">Мережеві (зелений тариф)</a></li>
-          </ul>
-          <ul>
-            <h3><a href="{% url 'SolarPanels' %}">Сонячні панелі</a></h3>
-            <hr />
-            <li><a href="{% url 'monocrystalline' %}">Монокристалічні</a></li>
-            <li><a href="{% url 'polycrystalline' %}">Полікристалічні</a></li>
-          </ul>
+              <h3><a href="{% url 'ReadySolutions' %}">Готові рішення</a></h3>
+              <hr />
+              <li><a href="{% url 'Autonomous' %}">Автономні</a></li>
+              <li><a href="{% url 'OwnConsumption' %}">Власне споживання</a></li>
+              <li><a href="{% url 'WaterHeating' %}">Підігрів води</a></li>
+            </ul>
+            <ul>
+              <h3><a href="{% url 'SolarInverters' %}">Сонячні інвертори</a></h3>
+              <hr />
+              <li><a href="{% url 'AutonomousInverters' %}">Автономні</a></li>
+              <li><a href="{% url 'HybridInverters' %}">Гібридні (з АКБ)</a></li>
+              <li><a href="{% url 'NetworkInverters' %}">Мережеві (зелений тариф)</a></li>
+            </ul>
+            <ul>
+              <h3><a href="{% url 'SolarPanels' %}">Сонячні панелі</a></h3>
+              <hr />
+              <li><a href="{% url 'monocrystalline' %}">Монокристалічні</a></li>
+              <li><a href="{% url 'polycrystalline' %}">Полікристалічні</a></li>
+            </ul>
         </div>
       </div>
       <div class="catalog_tovaru col-9">
@@ -42,7 +39,7 @@
                 <div class="col-12 price_black_top p-0">
                   <h2>{{ product.power }}</h2>
                 </div>
-                <div class="price_black_bottom col-12 p-0" style="background-image: url('{{ product.photo_1.url }}')">
+                <div class="price_black_bottom col-12 p-0" style="background-image: url('{{ product.photo_0.url }}')">
                   <div class="bottom col-12">
                     <p class="info_catalog">{{ product.title }}</p>
                     <p class="price_catalog">{{ product.price }}$</p>

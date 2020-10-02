@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Thank you{% endblock %}
+
+{% block content %}
+<div class="container-fluid created-bg">
+    <div class="container created">
+        <h2>Дякуємо за замовлення</h2>
+    <p>Ваше замовлення відправлено в обробку. Номер вашого замовлення
+        <strong>{{ order.id }}</strong>.</p>
+    </div>
+</div>
+    
+{% endblock %}
